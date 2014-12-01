@@ -1,0 +1,13 @@
+.include-font(@family: arial, @file: arial, @weight: normal, @style: normal){
+    @font-face{
+        font-family: @family;
+        src:url('/assets/fonts/@{file}.eot');
+        src:url('/assets/fonts/@{file}.eot?#iefix') format('embedded-opentype'),
+            url('/assets/fonts/@{file}.woff') format('woff'),
+            url('/assets/fonts/@{file}.svg#@{file}') format('svg'),
+            url('/assets/fonts/@{file}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+
+}
