@@ -189,6 +189,7 @@ html,
 body,
 .wrapper {
   width: 100%;
+  background-color: #dd6d26;
 }
 
 .h1 {
@@ -218,196 +219,132 @@ body,
 }
 
 @font-face {
-  font-family: 'AvantGarde-Bold';
-  src: url('/assets/fonts/AvantGarBol.eot');
-  src: url('/assets/fonts/AvantGarBol.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/AvantGarBol.woff') format('woff'),url('/assets/fonts/AvantGarBol.svg#AvantGarBol') format('svg'),url('/assets/fonts/AvantGarBol.ttf') format('truetype');
+  font-family: 'Pro-Bold';
+  src: url('/assets/fonts/SourceSansPro-Bold.eot');
+  src: url('/assets/fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SourceSansPro-Bold.woff') format('woff'),url('/assets/fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg'),url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'AvantGarde-Medium';
-  src: url('/assets/fonts/AvantGarMed.eot');
-  src: url('/assets/fonts/AvantGarMed.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/AvantGarMed.woff') format('woff'),url('/assets/fonts/AvantGarMed.svg#AvantGarMed') format('svg'),url('/assets/fonts/AvantGarMed.ttf') format('truetype');
+  font-family: 'Pro-Light';
+  src: url('/assets/fonts/SourceSansPro-Light.eot');
+  src: url('/assets/fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SourceSansPro-Light.woff') format('woff'),url('/assets/fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg'),url('/assets/fonts/SourceSansPro-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'AvantGarde-Book';
-  src: url('/assets/fonts/AvantGarBoo.eot');
-  src: url('/assets/fonts/AvantGarBoo.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/AvantGarBoo.woff') format('woff'),url('/assets/fonts/AvantGarBoo.svg#AvantGarBoo') format('svg'),url('/assets/fonts/AvantGarBoo.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BebasNeue';
-  src: url('/assets/fonts/BebasNeue-webfont.eot');
-  src: url('/assets/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/BebasNeue-webfont.woff') format('woff'),url('/assets/fonts/BebasNeue-webfont.svg#BebasNeue-webfont') format('svg'),url('/assets/fonts/BebasNeue-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
+.header {
+  position: fixed;
+  display: block;
   width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: black;
-}
-
-body .header {
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  padding: 30px 0 30px 30px;
+  height: 80px;
+  color: white;
   z-index: 2;
 }
 
-@media only screen and (max-width:1000px) {
-  body .header {
-    min-width: 1000px;
-  }
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
 }
 
-body .header #logo {
+.header_logo {
+  position: absolute;
   display: block;
-  width: 190px;
-  height: 0;
-  margin-top: -1px;
-  padding-top: 53px;
   overflow: hidden;
   float: left;
-  background-image: url(/assets/img/delete-logo-strip.png);
+  width: 60px;
+  height: 60px;
+  left: 0;
+  margin: 10px;
+  color: transparent;
+  background-image: url(/assets/img/dover-logo.svg);
   background-repeat: no-repeat;
   background-position: 0% 0px;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-body .header .header__inner {
-  float: right;
+.header_menu {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 40px;
+  right: 0;
+  margin: 20px;
+  background-color: blue;
+  cursor: pointer;
 }
 
-body .header .header__inner .nav {
+.header_nav {
+  position: relative;
   display: inline-block;
-  clear: right;
-  margin: 0;
-  padding: 0;
-  padding-right: 30px;
   float: right;
-  list-style: none;
+  margin-top: 12px;
 }
 
-body .header .header__inner .nav_social {
-  height: 18px;
-  margin: 0 0 14px;
-  top: -4px;
+.nav_item {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-body .header .header__inner .nav_social .nav__item {
-  float: right;
+.nav_item a {
+  color: white;
+  font-family: "Pro-Light";
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-body .header .header__inner .nav_social .nav__item a {
+.wrap_menu_button {
   position: relative;
   display: block;
-  overflow: hidden;
-  width: 18px;
-  height: 18px;
-  margin: 4px 0 0 6px;
-  color: transparent;
-  transition: 0.1s ease;
-  -webkit-transition: 0.1s ease;
-}
-
-body .header .header__inner .nav_social .nav__item a:hover {
-  transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  -webkit-transform: translateY(-4px);
-}
-
-body .header .header__inner .nav_social .nav__item a .icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-image: url(/assets/img/sprite-social-buttons.png);
-  background-size: 58px 18px;
-  -webkit-background-size: 58px 18px;
-}
-
-body .header .header__inner .nav_social .nav__item a .icon_facebook {
-  background-position: 0 0;
-}
-
-body .header .header__inner .nav_social .nav__item a .icon_twitter {
-  background-position: -20px 0;
-}
-
-body .header .header__inner .nav_social .nav__item a .icon_vimeo {
-  background-position: -40px 0;
-}
-
-body .header .header__inner .nav_social .nav__item a .icon_google-plus {
-  background-image: url('/assets/img/google-plus_Icon.png');
-  -webkit-background-size: 100%;
-  background-size: 100%;
-}
-
-body .header .header__inner .nav_primary {
   float: right;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
-body .header .header__inner .nav_primary .nav__item {
-  display: inline-block;
+.menu_button {
   position: relative;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   zoom: 1;
 }
 
-body .header .header__inner .nav_primary .nav__item.active .line {
-  bottom: -3px;
-  opacity: 1;
-  width: 100%;
-  margin-left: 0;
-}
-
-body .header .header__inner .nav_primary .nav__item a {
-  position: relative;
-  margin: 0 0 0 18px;
-  padding: 5px 0 2px;
-  font-family: "AvantGarde-Bold";
-  font-size: 1.15em;
-  line-height: 1em;
-  text-decoration: none;
-  color: white;
-}
-
-body .header .header__inner .nav_primary .nav__item a:after {
-  content: ".";
-}
-
-body .header .header__inner .nav_primary .nav__item a:hover .line {
-  bottom: -3px;
-  opacity: 1;
-  width: 100%;
-  margin-left: 0;
-}
-
-body .header .header__inner .nav_primary .nav__item a .line {
+.menu_button_item {
   position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
   height: 2px;
   background: #fff;
-  opacity: 0;
-  -webkit-transition: 0.1s ease;
   transition: 0.1s ease;
-  pointer-events: none;
+  -webkit-transition: 0.1s ease;
+}
+
+.menu_button_item_top {
+  top: 15%;
+}
+
+.menu_button_item_middle {
+  top: 48%;
+}
+
+.menu_button_item_bottom {
+  bottom: 15%;
+}
+
+.wrap_menu_button:hover .menu_button_item_top {
+  top: 2px;
+}
+
+.wrap_menu_button:hover .menu_button_item_bottom {
+  bottom: 2px;
 }
 
 .container {

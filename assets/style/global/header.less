@@ -1,174 +1,129 @@
-body {
+.header {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 80px;
+
+	color: white;
+
+	z-index: 2;
+
+	@media only screen and (max-width: 1000px) {
+		
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		background: #000;
+		opacity: 0.5;
+	}
+}
+
+.header_logo {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 60px;
+	height: 60px;
+	left: 0;
+	margin: 10px;
+
+	color: transparent;
+	
+	background-image: url(/assets/img/dover-logo.svg);
+	background-repeat: no-repeat;
+	background-position: 0% 0px;
+	background-size: 100% 100%;
+}
+
+.header_menu {
+	position: absolute;
+	display: block;
+	width: auto;
+	height: 40px;
+	right: 0;
+	margin: 20px;
+
+	background-color: blue;
+
+	cursor: pointer;
+}
+
+.header_nav {
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-top: 12px;
+}
+
+.nav_item {
+	display: inline-block;
+	margin-right: 20px;
+
+	
+	a {
+		color: white;
+		font-family: "Pro-Light";
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+
+.wrap_menu_button {
+	position: relative;
+	display: block;
+	float: right;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+
+	border: 2px solid white;
+
+	cursor: pointer;
+}
+
+.menu_button {
+	position: relative;
+	display: inline-block;
 	width: 100%;
 	height: 100%;
-	padding: 0;
-	margin: 0;
-	border: 0;
 	
-	background-color: black;
+	zoom: 1;
 
-	.header {
+	&_item {
 		position: absolute;
-		display: inline-block;
 		width: 100%;
-		padding: 30px 0 30px 30px;
+		height: 2px;
 
-		z-index: 2;
+		background: #fff;
 
-		@media only screen and (max-width: 1000px) {
-			min-width: 1000px;
+		transition: 0.1s ease;
+		-webkit-transition: 0.1s ease;
+		-moz-transition: 0.1s ease;
+		-o-transition: 0.1s ease;
+		-ms-transition: 0.1s ease;
+
+		&_top {
+			top: 15%;
 		}
-
-		#logo {
-			display: block;
-			width: 190px;
-			height: 0;
-			margin-top: -1px;
-			padding-top: 53px;
-			overflow: hidden;
-			float: left;
-			
-			background-image: url(/assets/img/delete-logo-strip.png);
-			background-repeat: no-repeat;
-			background-position: 0% 0px;
+		&_middle {
+			top: 48%;	
 		}
-
-		.header__inner {
-		    float: right;
-
-			.nav {
-				display: inline-block;
-				clear: right;
-				margin: 0;
-				padding: 0;
-				padding-right: 30px;
-
-				float: right;
-				list-style: none;
-			}
-
-
-			.nav_social {
-				height: 18px;
-				margin: 0 0 14px;
-			    top: -4px;
-
-				.nav__item {
-			        float: right;
-
-			        a {
-			        	position: relative;
-						display: block;
-						overflow: hidden;
-						width: 18px;
-						height: 18px;
-						margin: 4px 0 0 6px;
-
-						color: transparent;
-
-						transition: 0.1s ease;
-						-webkit-transition: 0.1s ease;
-						-moz-transition: 0.1s ease;
-						-o-transition: 0.1s ease;
-						-ms-transition: 0.1s ease;
-
-							&:hover {
-					        	transform: translateY(-4px);
-					        	-ms-transform: translateY(-4px);
-					        	-webkit-transform: translateY(-4px);
-					        }
-
-				        .icon {
-					        position: absolute;
-					        width: 18px;
-					        height: 18px;
-
-					        background-image: url(/assets/img/sprite-social-buttons.png);
-					        background-size: 58px 18px;
-					        -webkit-background-size: 58px 18px;
-							-moz-background-size: 58px 18px;
-							
-							
-					    }
-					    .icon_facebook {
-					        background-position: 0 0;
-					    }
-					    .icon_twitter {
-					        background-position: -20px 0;
-					    }
-					    .icon_vimeo {
-					        background-position: -40px 0;
-					    }
-					    .icon_google-plus{
-							background-image: url('/assets/img/google-plus_Icon.png');
-							background-size: 100%;
-					    }
-					}
-			    }
-			}
-
-
-			.nav_primary {
-				float: right;
-
-
-				.nav__item {
-					display: inline-block;
-					position: relative;
-					margin: 0;
-					padding: 0;
-					
-					vertical-align: top;
-					zoom: 1;
-
-
-					&.active .line {
-				        bottom: -3px;
-				        opacity: 1;
-				        width: 100%;
-				        margin-left: 0;
-				    }
-
-					a {
-						position: relative;
-						margin: 0 0 0 18px;
-						padding: 5px 0 2px;
-
-						font-family: "AvantGarde-Bold";
-						font-size: 1.15em;
-						line-height: 1em;
-						text-decoration: none;
-						
-						color: white;
-							&:after {
-					            content: ".";
-					        }
-
-					    &:hover .line {
-				            bottom: -3px;
-				            opacity: 1;
-				            width: 100%;
-				            margin-left: 0;
-					    }
-
-					    
-
-					    .line {
-					        position: absolute;
-					        bottom: -8px;
-					        left: 0;
-					        width: 50%;
-					        margin-left: 25%;
-					        height: 2px;
-					        background: #fff;
-					        opacity: 0;
-					        transition: 0.1s ease;
-					        pointer-events: none;
-					    }
-					}
-				}
-			}
-			
+		&_bottom {
+			bottom: 15%;
 		}
 	}
+}
+
+.wrap_menu_button:hover .menu_button_item_top {
+	top: 2px;
+}
+
+.wrap_menu_button:hover .menu_button_item_bottom {
+	bottom: 2px;
 }
