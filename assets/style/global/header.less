@@ -50,15 +50,35 @@
 	margin: 20px;
 
 	background-color: blue;
+}
+span {
+	visibility: hidden;
+}
 
-	cursor: pointer;
+.show {
+	visibility: hidden;
+}
+.wrap_nav {
+	position: relative;
+	display: inline-block;
+	float: right;
+	overflow: hidden;
+	margin-top: 12px;
 }
 
 .header_nav {
 	position: relative;
-	display: inline-block;
-	float: right;
-	margin-top: 12px;
+	display: block;
+
+	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+
+	transition: 0.1s ease;
+	-webkit-transition: 0.1s ease;
+	-moz-transition: 0.1s ease;
+	-o-transition: 0.1s ease;
+	-ms-transition: 0.1s ease;
 }
 
 .nav_item {
@@ -72,6 +92,12 @@
 		text-transform: uppercase;
 		text-decoration: none;
 	}
+}
+
+.nav_active {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
 }
 
 .wrap_menu_button {
