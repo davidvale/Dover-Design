@@ -1,3 +1,5 @@
+
+/* Global Nav */
 $(document).ready(function(){
   $(".wrap_menu_button").click(function(){
   	$(".header").toggleClass("header_on");
