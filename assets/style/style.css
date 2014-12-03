@@ -240,16 +240,10 @@ body,
   width: 100%;
   height: 80px;
   color: white;
+  background-color: rgba(0,0,0,0.65);
   z-index: 2;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.5;
+  transition: 0.1s ease;
+  -webkit-transition: 0.1s ease;
 }
 
 .header_logo {
@@ -275,16 +269,9 @@ body,
   width: auto;
   height: 40px;
   right: 0;
-  margin: 20px;
-  background-color: blue;
-}
-
-span {
-  visibility: hidden;
-}
-
-.show {
-  visibility: hidden;
+  top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .wrap_nav {
@@ -330,7 +317,7 @@ span {
   width: 40px;
   height: 40px;
   padding: 5px;
-  border: 2px solid white;
+  border: 2px solid rgba(255,255,255,0.6);
   cursor: pointer;
 }
 
@@ -346,7 +333,7 @@ span {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: white;
   transition: 0.1s ease;
   -webkit-transition: 0.1s ease;
 }
@@ -363,12 +350,65 @@ span {
   bottom: 15%;
 }
 
-.wrap_menu_button:hover .menu_button_item_top {
-  top: 2px;
+.wrap_menu_button:hover {
+  border: 2px solid #fff;
 }
 
-.wrap_menu_button:hover .menu_button_item_bottom {
-  bottom: 2px;
+.on .menu_button_item_top {
+  top: 20%;
+  transform: rotate(45deg) translate(5px, 5px);
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+  -ms-transform: rotate(45deg) translate(5px, 5px);
+}
+
+.on .menu_button_item_middle {
+  opacity: 0;
+}
+
+.on .menu_button_item_bottom {
+  bottom: 5%;
+  transform: rotate(-45deg) translate(7px, -8px);
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+  -ms-transform: rotate(-45deg) translate(7px, -8px);
+}
+
+@media only screen and (max-width:600px) {
+  .header_menu {
+    width: 100%;
+  }
+
+  .wrap_nav {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .header_nav {
+    position: relative;
+    display: block;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transition: 0.1s ease;
+    -webkit-transition: 0.1s ease;
+  }
+
+  .nav_active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+
+  .header_on {
+    height: 245px;
+  }
+
+  .nav_item {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 }
 
 .container {

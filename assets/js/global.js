@@ -1,8 +1,7 @@
 $(document).ready(function(){
   $(".wrap_menu_button").click(function(){
+  	$(".header").toggleClass("header_on");
     $(".header_nav").toggleClass("nav_active");
-  });
-  $(".wrap_menu_button").click(function(){
-    $(".menu_button").toggleClass("show");
+    $(".menu_button").toggleClass("on");
   });
 });
