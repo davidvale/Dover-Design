@@ -242,8 +242,8 @@ body,
   color: white;
   background-color: rgba(0,0,0,0.65);
   z-index: 2;
-  transition: 0.1s ease;
-  -webkit-transition: 0.1s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
 }
 
 .header_logo {
@@ -279,7 +279,7 @@ body,
   display: inline-block;
   float: right;
   overflow: hidden;
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .header_nav {
@@ -288,26 +288,79 @@ body,
   transform: translateX(100%);
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
-  transition: 0.1s ease;
-  -webkit-transition: 0.1s ease;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  opacity: 0;
 }
 
 .nav_item {
   display: inline-block;
-  margin-right: 20px;
+  padding: 0 20px 0 20px;
+  border-left: 1px solid rgba(255,255,255,0.8);
+  border-right: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav_item:first-child {
+  border: none;
 }
 
 .nav_item a {
+  position: relative;
+  display: block;
+  padding: 3px 10px;
   color: white;
+  font-size: 15px;
   font-family: "Pro-Light";
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.nav_item a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.nav_item a:hover:before {
+  width: 100%;
+}
+
+.nav_item a:hover span {
+  color: black!important;
+}
+
+.nav_item a span {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 0;
+}
+
+.active a span {
+  color: black;
+}
+
+.active a::before {
+  width: 100%;
 }
 
 .nav_active {
   transform: translateX(0);
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
+  opacity: 1;
 }
 
 .wrap_menu_button {
@@ -372,7 +425,7 @@ body,
   -ms-transform: rotate(-45deg) translate(7px, -8px);
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:765px) {
   .header_menu {
     width: 100%;
   }
@@ -381,17 +434,14 @@ body,
     float: none;
     width: 100%;
     margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
   }
 
   .header_nav {
-    position: relative;
-    display: block;
-    transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transition: 0.1s ease;
-    -webkit-transition: 0.1s ease;
+    transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
   }
 
   .nav_active {
@@ -401,13 +451,15 @@ body,
   }
 
   .header_on {
-    height: 245px;
+    height: 285px;
   }
 
   .nav_item {
     display: block;
-    margin-bottom: 20px;
-    margin-right: 0;
+    max-width: 200px;
+    margin: 0 auto 20px auto;
+    padding: 0;
+    border: none;
   }
 }
 
