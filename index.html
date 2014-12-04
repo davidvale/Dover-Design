@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
+
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -45,7 +46,7 @@
                     </div>
                 </div>
             </div>
-
+            <!--
             <div class="content">
                 <div class="home">
                     <ul class="slideshow">
@@ -53,7 +54,31 @@
                             <div class="image"></div>
                             <h1>this is my content</h1>
                         </li>
+                        <li class="slide">
+                            <div class="image"></div>
+                            <h1>this is my content</h1>
+                        </li>
                     </ul>
+                </div>
+            </div>-->
+
+            <div class="content">
+                <div class="home">
+                    <ul id="cbp-bislideshow" class="cbp-bislideshow">
+                        <li>
+                            <img src="assets/content/home/home_1.jpg" alt="image01"/>
+                            <h1>this is my content</h1>
+                        </li>
+                        <li>
+                            <img src="assets/content/home/home_2.jpg" alt="image02"/>
+                            <h1>this is my content</h1>
+                        </li>
+                    </ul>
+                    <div id="cbp-bicontrols" class="cbp-bicontrols">
+                        <span class="cbp-biprev"></span>
+                        <span class="cbp-bipause"></span>
+                        <span class="cbp-binext"></span>
+                    </div>
                 </div>
             </div>
 
@@ -79,6 +104,15 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
+            <script src="assets/js/jquery.imagesloaded.min.js"></script>
+            <script src="assets/js/cbpBGSlideshow.min.js"></script>
+            <script>
+                $(function() {
+                    cbpBGSlideshow.init();
+                });
         </script>
     </body>
 </html>
