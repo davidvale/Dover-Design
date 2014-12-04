@@ -46,41 +46,61 @@
                     </div>
                 </div>
             </div>
+
+            <div class="content">
+                <div class="home">
+                    <div class="slideshow">
+                        <div class="slide">
+                            <div class="image" style='background-image:url(assets/content/home/home_1.jpg)'></div>
+                            <h1>this is my content</h1>
+                        </div>
+                        <div class="slide">
+                            <div class="image" style='background-image:url(assets/content/home/home_2.jpg)'></div>
+                            <h1>this is my content</h1>
+                        </div>
+                        <div class="slide">
+                            <div class="image" style='background-image:url(assets/content/home/home_3.jpg)'></div>
+                            <h1>this is my content</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <!--
             <div class="content">
                 <div class="home">
                     <ul class="slideshow">
                         <li class="slide">
-                            <div class="image"></div>
+                            <div class="image" style='background-image:url(assets/content/home/home_1.jpg)'></div>
                             <h1>this is my content</h1>
                         </li>
                         <li class="slide">
-                            <div class="image"></div>
+                            <div class="image" style='background-image:url(assets/content/home/home_2.jpg)'></div>
+                            <h1>this is my content</h1>
+                        </li>
+                        <li class="slide">
+                            <div class="image" style='background-image:url(assets/content/home/home_3.jpg)'></div>
                             <h1>this is my content</h1>
                         </li>
                     </ul>
-                </div>
-            </div>-->
-
-            <div class="content">
-                <div class="home">
-                    <ul id="cbp-bislideshow" class="cbp-bislideshow">
-                        <li>
-                            <img src="assets/content/home/home_1.jpg" alt="image01"/>
-                            <h1>this is my content</h1>
-                        </li>
-                        <li>
-                            <img src="assets/content/home/home_2.jpg" alt="image02"/>
-                            <h1>this is my content</h1>
-                        </li>
-                    </ul>
-                    <div id="cbp-bicontrols" class="cbp-bicontrols">
-                        <span class="cbp-biprev"></span>
-                        <span class="cbp-bipause"></span>
-                        <span class="cbp-binext"></span>
-                    </div>
                 </div>
             </div>
+            
+            
+            <div class="home">
+                <div class="slideshow">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+
+                            <div class="item"><img src="assets/content/home/home_1.jpg" alt="The Last of us"></div>
+                            <div class="item"><img src="assets/content/home/home_2.jpg" alt="GTA V"></div>
+                            <div class="item"><img src="assets/content/home/home_3.jpg" alt="Mirror Edge"></div>
+
+                        </div>
+                      </div>
+                </div>-->
+
+
 
             <div class="footer">
                 this is my footer
@@ -95,6 +115,7 @@
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/global.js"></script>
+        <script src="assets/js/slick.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -105,14 +126,20 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
-            <script src="assets/js/jquery.imagesloaded.min.js"></script>
-            <script src="assets/js/cbpBGSlideshow.min.js"></script>
-            <script>
-                $(function() {
-                    cbpBGSlideshow.init();
-                });
+
+        <!-- Call the carousel Plugin -->
+        <script>
+        $(document).ready(function(){
+            $('.slideshow').slick({
+             dots: true,
+              infinite: true,
+              speed: 500,
+              fade: true,
+              slide: 'div',
+              cssEase: 'linear'
+            });
+        });
+
         </script>
     </body>
 </html>
