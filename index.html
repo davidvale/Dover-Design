@@ -52,7 +52,11 @@
                     <div class="slideshow">
                         <div class="slide">
                             <div class="image" style='background-image:url(assets/content/home/home_1.jpg)'></div>
-                            <h1>this is my content</h1>
+                            <div class="slide_title">
+                                <h1 class="h1">this is my content</h1>
+                                <h2 class="h2">This is my subtitle</h2>
+                                <!--<a href="">Find Out More</a>-->
+                            </div>
                         </div>
                         <div class="slide">
                             <div class="image" style='background-image:url(assets/content/home/home_2.jpg)'></div>
@@ -131,12 +135,12 @@
         <script>
         $(document).ready(function(){
             $('.slideshow').slick({
-             dots: true,
-              infinite: true,
-              speed: 500,
-              fade: true,
-              slide: 'div',
-              cssEase: 'linear'
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                slide: 'div',
+                cssEase: 'linear'
             });
         });
 
