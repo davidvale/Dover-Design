@@ -66,12 +66,11 @@
 	display: inline-block;
 	float: right;
 	overflow: hidden;
-	margin-top: 9px;
 }
 
 .header_nav {
 	position: relative;
-	display: none;
+	margin-top: 10px;
 
 	transform: translateX(100%);
 	-webkit-transform: translateX(100%);
@@ -161,7 +160,6 @@
 
 /*---- Show nav ----*/
 .nav_active {
-	display: block;
 	transform: translateX(0);
 	-webkit-transform: translateX(0);
 	-ms-transform: translateX(0);
@@ -265,20 +263,21 @@
 	.wrap_nav {
 		float: none;
 		width: 100%;
-		margin-top: 20px;
 		padding-top: 20px;
 
 		text-align: center;
 	}
 
 	.header_nav {
-
+		margin-top: -160px;
 		transform: translateY(-120%);
 		-webkit-transform: translateY(-120%);
 		-ms-transform: translateY(-120%);
 	}
 
 	.nav_active {
+		margin-top: 20px;
+
 		transform: translateY(0);
 		-webkit-transform: translateY(0);
 		-ms-transform: translateY(0);
