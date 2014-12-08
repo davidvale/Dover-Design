@@ -7,3 +7,188 @@
 
 	background-color: rgba(0, 0, 0, 0.65);
 }
+
+.copyright {
+	position: absolute;
+	display: block;
+	color: white;
+	float: left;
+	margin-top: 20px;
+	left: 20px;
+
+	Font-family: 'Pro-Light',sans-serif;
+	font-size: 12px;
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*---- Footer Nav ----*/
+
+.footer_nav {
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	right: 0;
+
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+
+.footer_item {
+	display: inline-block;
+	padding: 0 10px 0 15px;
+
+	border-left: 1px solid rgba(255,255,255,0.8);
+	border-right: none;
+	box-sizing: border-box;
+
+	&:first-child {
+		border: none;
+	}
+
+	
+	a {
+		position: relative;
+		display: inline;
+		padding: 3px 10px;
+
+		color: white;
+		font-size: 15px;
+		font-family: "Pro-Light";
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 0px;
+			height: 100%;
+			max-height: 25px;
+			left: 0;
+			top: 0;
+			
+			background: #fff;
+
+			-webkit-transition: all .2s;
+			transition: all .2s;
+			
+		}
+
+		&:hover:before {
+			width: 100%;
+		}
+
+		&:hover span {
+			color: black!important;
+		}
+
+		span {
+			position: relative;
+			
+			color: #fff;
+			font-weight: bold;
+
+			-webkit-transition: all .2s;
+			transition: all .2s;
+			
+			z-index: 0;
+		}
+	}
+}
+
+/*---- Nav item active ----*/
+.active {
+	a span {
+		color: black;
+	}
+
+	a::before {
+		width: 100%;
+	}
+}
+
+
+.social_btn {
+	overflow: hidden;
+	display: block;
+	height: 25px;
+	width: 25px;
+	border: 1px solid rgba(255,255,255,0.8);
+	
+	color: transparent!important;
+}
+
+.linkedin_logo {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 0;
+	top: 0;
+	background-image: url(/assets/img/linkedin.svg);
+	background-size: 100%;
+}
+
+a:hover .linkedin_logo {
+	background-image: url(/assets/img/linkedin_hover.svg);
+}
+
+
+.facebook_logo {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 0;
+	top: 0;
+	background-image: url(/assets/img/linkedin.svg);
+	background-size: 100%;
+}
+
+a:hover .facebook_logo {
+	background-image: url(/assets/img/linkedin_hover.svg);
+}
+
+
+
+
+@media only screen and (max-width: 765px) {
+	.footer {
+		position: absolute;
+		height: 90px;
+		bottom: -90px;
+		background-color: black;
+	}
+
+	.footer_item a {
+		display: flex;
+		font-size: 12px;
+		padding: 0 1px 0 5px;
+	}
+
+	.footer_nav {
+		float: none;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.copyright {
+		position: relative;
+		float: none;
+		left: 0px;
+		text-align: center;
+		font-size: 10px;
+	}
+
+	.linkedin_logo, .facebook_logo {
+		width: 20px;
+		height: 20px;
+		left: 2px;
+	}
+
+}

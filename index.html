@@ -52,62 +52,52 @@
                     <div class="slideshow">
                         <div class="slide">
                             <div class="image" style='background-image:url(assets/content/home/home_1.jpg)'></div>
-                            <div class="slide_title">
-                                <h1 class="h1">this is my content</h1>
-                                <h2 class="h2">This is my subtitle</h2>
-                                <!--<a href="">Find Out More</a>-->
+                            <div class="table">
+                                <div class="cell">
+                                    <div class="slide_title">
+                                        <h1 class="h1">this is my content</h1>
+                                        <h2 class="h2">This is my subtitle</h2>
+                                        <!--<a href="">Find Out More</a>-->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="slide">
                             <div class="image" style='background-image:url(assets/content/home/home_2.jpg)'></div>
-                            <h1>this is my content</h1>
+                            <div class="table">
+                                <div class="cell">
+                                    <div class="slide_title">
+                                        <h1 class="h1">this is my content</h1>
+                                        <h2 class="h2">This is my subtitle</h2>
+                                        <!--<a href="">Find Out More</a>-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="slide">
                             <div class="image" style='background-image:url(assets/content/home/home_3.jpg)'></div>
-                            <h1>this is my content</h1>
+                            <div class="table">
+                                <div class="cell">
+                                    <div class="slide_title">
+                                        <h1 class="h1">this is my content</h1>
+                                        <h2 class="h2">This is my subtitle</h2>
+                                        <!--<a href="">Find Out More</a>-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <!--
-            <div class="content">
-                <div class="home">
-                    <ul class="slideshow">
-                        <li class="slide">
-                            <div class="image" style='background-image:url(assets/content/home/home_1.jpg)'></div>
-                            <h1>this is my content</h1>
-                        </li>
-                        <li class="slide">
-                            <div class="image" style='background-image:url(assets/content/home/home_2.jpg)'></div>
-                            <h1>this is my content</h1>
-                        </li>
-                        <li class="slide">
-                            <div class="image" style='background-image:url(assets/content/home/home_3.jpg)'></div>
-                            <h1>this is my content</h1>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            
-            <div class="home">
-                <div class="slideshow">
-                        <div id="owl-demo" class="owl-carousel owl-theme">
-
-                            <div class="item"><img src="assets/content/home/home_1.jpg" alt="The Last of us"></div>
-                            <div class="item"><img src="assets/content/home/home_2.jpg" alt="GTA V"></div>
-                            <div class="item"><img src="assets/content/home/home_3.jpg" alt="Mirror Edge"></div>
-
-                        </div>
-                      </div>
-                </div>-->
-
-
-
             <div class="footer">
-                this is my footer
+                <p class="copyright">© 2014 Dover Design</p>
+                <ul class="footer_nav">
+                    <li class="footer_item"><a href="#"><span>Blog</span></a></li>
+                    <li class="footer_item"><a class="footer_link" href="#"><span>Contact</span></a></li>
+                    <li class="footer_item"><a class="social_btn linkedin" href="#">-<div class="linkedin_logo"></div></a></li>
+                    <li class="footer_item"><a class="social_btn facebook" href="#">-<div class="facebook_logo"></div></a></li>
+                </ul>
             </div>
 
         </div>
@@ -136,11 +126,14 @@
         $(document).ready(function(){
             $('.slideshow').slick({
                 dots: true,
+                arrows: false,
                 infinite: true,
                 speed: 500,
                 fade: true,
                 slide: 'div',
-                cssEase: 'linear'
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 2400,
             });
         });
 

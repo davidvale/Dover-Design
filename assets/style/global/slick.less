@@ -90,7 +90,23 @@
 /* Dots */
 .slick-slider {  }
 
-.slick-dots { position: absolute; bottom: 80px; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
+@media only screen and (max-width: 765px){
+	.slick-dots { 
+		bottom: 20px!important; 
+		right: 0!important;
+		width: 100%!important;
+	}
+}
+.slick-dots { 
+	position: absolute; 
+	bottom: 45%; 
+	right: 17px;
+	list-style: none; 
+	display: block; 
+	text-align: center; 
+	padding: 0; 
+	width: 20px; 
+}
 .slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
 .slick-dots li button { border: 1px solid white; background: transparent; display: block; height: 10px; width: 10px; outline: none; line-height: 0; font-size: 0; color: transparent; padding: 5px; cursor: pointer; }
 .slick-dots li button:hover, .slick-dots li button:focus { background: white; outline: none; }
