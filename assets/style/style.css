@@ -909,9 +909,9 @@ a:hover .facebook_logo {
 
 @media only screen and (max-width:765px) {
   .footer {
-    position: absolute;
+    position: relative;
+    display: inline-table;
     height: 90px;
-    bottom: -90px;
     background-color: black;
   }
 
@@ -1014,7 +1014,6 @@ a:hover .facebook_logo {
 .slide_title {
   position: relative;
   display: inline-table;
-  top: -100px;
   margin: 20px;
   padding: 25px;
   color: white;
@@ -1024,8 +1023,6 @@ a:hover .facebook_logo {
   line-height: auto;
   background-color: rgba(0,0,0,0.65);
   border: 4px solid #dd6d26;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
 }
 
 .table {
@@ -1043,7 +1040,42 @@ a:hover .facebook_logo {
 }
 
 .slick-active .slide_title {
-  top: 0px;
+  -webkit-animation: slideup 0.6s 1 ease;
+  animation: slideup 0.6s 1 ease;
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    -webkit-transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .work_wrap {
@@ -1052,6 +1084,7 @@ a:hover .facebook_logo {
   width: 100%;
   height: 100%;
   padding-top: 80px;
+  padding-bottom: 50px;
   background: white;
 }
 
@@ -1073,7 +1106,7 @@ a:hover .facebook_logo {
   display: block;
   position: relative;
   overflow: hidden;
-  width: 25%;
+  width: 20%;
   padding-right: 10px;
   padding-bottom: 10px;
   float: left;
@@ -1102,6 +1135,12 @@ a:hover .facebook_logo {
   filter: grayscale(0);
 }
 
+.work__cell__container:hover .work__title {
+  -webkit-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  transform: translateY(-150px);
+}
+
 .work__cell img {
   display: block;
   position: absolute;
@@ -1111,9 +1150,21 @@ a:hover .facebook_logo {
   left: 0;
 }
 
-@media only screen and (min-width:1600px) {
+@media only screen and (max-width:1500px) {
+  .work__cell {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width:1000px) {
   .work__cell {
     width: 33.333%;
+  }
+}
+
+@media only screen and (max-width:765px) {
+  .work__cell {
+    width: 50%;
   }
 }
 
@@ -1121,8 +1172,8 @@ a:hover .facebook_logo {
   position: absolute;
   display: block;
   width: 100%;
-  bottom: 0px;
-  padding: 20px 20px;
+  bottom: -150px;
+  padding: 20px;
   text-align: right;
   background-color: rgba(0,0,0,0.8);
   z-index: 1;
@@ -1134,8 +1185,9 @@ a:hover .facebook_logo {
   position: relative;
   display: block;
   margin: 0 auto;
+  margin-bottom: 5px;
   font-size: 18px;
-  font-family: 'Pro-Light',sans-serif;
+  font-family: 'Pro-SemiBold',sans-serif;
   line-height: 1;
   color: white;
   z-index: 1;
@@ -1146,9 +1198,10 @@ a:hover .facebook_logo {
   display: block;
   margin: 0 auto;
   font-size: 18px;
-  font-family: 'AvantGarde-Bold',Helvetica,Arial;
+  font-family: 'Pro-light',sans-serif;
   line-height: 1;
-  color: rbga(0, 0, 0, .6);
+  color: white;
+  opacity: 0.8;
 }
 
 .work__background {
