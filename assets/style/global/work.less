@@ -155,3 +155,87 @@
 	-o-transition: 0.3s ease;
 	-ms-transition: 0.3s ease;
 }
+
+
+
+
+
+.work__row__archive {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 0px; 
+	padding-left: 10px;
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}
+
+.archived {
+	display: none;
+	overflow: hidden;
+	height: 0px;
+}
+
+.load_more {
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.load_more_btn {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border: 2px solid black;
+
+	color: black;
+	font-family: 'Pro-Regular',sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: inline-flex;
+		width: 0;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: black;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+	}
+
+	span {
+		position: relative;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+		z-index: 0;
+	}
+
+	&:hover {
+		color: white;
+	}
+
+	&:hover::before {
+		width: 100%;
+	}
+}
+
+.no_btn {
+	display: none;
+}

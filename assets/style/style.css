@@ -543,7 +543,7 @@ body,
   top: 0;
   color: white;
   background-color: rgba(0,0,0,0.65);
-  z-index: 2;
+  z-index: 3;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
 }
@@ -777,6 +777,7 @@ body,
   height: 50px;
   bottom: 0;
   background-color: rgba(0,0,0,0.65);
+  z-index: 2;
 }
 
 .copyright {
@@ -952,9 +953,9 @@ a:hover .facebook_logo {
   min-height: 500px;
   bottom: 0;
   top: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   background: #000;
 }
 
@@ -975,10 +976,12 @@ a:hover .facebook_logo {
   top: 0;
   left: 0;
   z-index: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .slide {
@@ -1040,11 +1043,11 @@ a:hover .facebook_logo {
 }
 
 .slick-active .slide_title {
-  -webkit-animation: slideup 0.6s 1 ease;
-  animation: slideup 0.6s 1 ease;
+  -webkit-animation: slideup 0.6s 1 ease running;
+  animation: slideup 0.6s 1 ease running;
 }
 
-@-webkit-keyframes slideup {
+@keyframes slideup {
   0% {
     -webkit-transform: translateY(-200px);
     opacity: 0;
@@ -1061,7 +1064,7 @@ a:hover .facebook_logo {
   }
 }
 
-@keyframes slideup {
+@-webkit-keyframes slideup {
   0% {
     -webkit-transform: translateY(-200px);
     opacity: 0;
@@ -1222,4 +1225,83 @@ a:hover .facebook_logo {
   transform-origin: 50% 50%;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
+}
+
+.work__row__archive {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 0px;
+  padding-left: 10px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+
+.work__row__archive:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.archived {
+  display: none;
+  overflow: hidden;
+  height: 0px;
+}
+
+.load_more {
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.load_more_btn {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid black;
+  color: black;
+  font-family: 'Pro-Regular',sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.load_more_btn::before {
+  content: '';
+  position: absolute;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: black;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.load_more_btn span {
+  position: relative;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 0;
+}
+
+.load_more_btn:hover {
+  color: white;
+}
+
+.load_more_btn:hover::before {
+  width: 100%;
+}
+
+.no_btn {
+  display: none;
 }

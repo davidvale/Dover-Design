@@ -7,6 +7,7 @@
 
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 
 	background: #000;
 }
@@ -32,8 +33,11 @@
 
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	
 	-webkit-transform: translateZ(0px);
+	-moz-transform: translateZ(0px);
+	transform: translateZ(0px);
 }
 
 .slide {
@@ -96,8 +100,9 @@
 }
 
 .slick-active .slide_title {
-	-webkit-animation: slideup 0.6s 1 ease; /* Chrome, Safari, Opera */ 
-    animation: slideup 0.6s 1 ease;
+	-moz-animation: slideup 0.6s 1 ease running;
+	-webkit-animation: slideup 0.6s 1 ease running; /* Chrome, Safari, Opera */ 
+    animation: slideup 0.6s 1 ease running;
 }
 
 @keyframes slideup {
@@ -105,3 +110,17 @@
     50%   {-webkit-transform: translateY(-200px); opacity: 0}
     100% {-webkit-transform: translateY(0px); opacity: 1}
 }
+
+@-webkit-keyframes slideup {
+	0%   {-webkit-transform: translateY(-200px); opacity: 0}
+    50%   {-webkit-transform: translateY(-200px); opacity: 0}
+    100% {-webkit-transform: translateY(0px); opacity: 1}
+}
+
+@-moz-keyframes slideup {
+	0%   {-webkit-transform: translateY(-200px); opacity: 0}
+    50%   {-webkit-transform: translateY(-200px); opacity: 0}
+    100% {-webkit-transform: translateY(0px); opacity: 1}
+}
+
+

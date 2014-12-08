@@ -6,4 +6,8 @@ $(document).ready(function(){
     $(".header_nav").toggleClass("nav_active");
     $(".menu_button").toggleClass("on");
   });
+  $(".load_more_btn").click(function(){
+  	$(".work__row__archive").removeClass("archived");
+  	$(".load_more").addClass("no_btn");
+  });
 });
