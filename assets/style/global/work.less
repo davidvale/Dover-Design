@@ -1,0 +1,151 @@
+.work_wrap {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 80px;
+	background: white;
+}
+
+.work__row {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 10px; 
+	padding-left: 10px;
+	/*padding-right: 40px;*/
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.work__cell {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 25%;
+	padding-right: 10px;
+	padding-bottom: 10px;
+
+	float: left;
+
+	&__container {
+		display: block;
+		position: relative;
+		overflow: hidden;
+
+		cursor: pointer;
+
+
+		&:before {
+			content:'';
+			display: block;
+			position: relative;
+			width: 100%;
+			padding-top: 100%;
+		}
+
+		&:hover {
+			.work__background {
+				transform: scale(1.06);
+
+				-webkit-filter: grayscale(0%);
+				filter: grayscale(0%);
+			}
+
+			/*.work__title {
+				transform: translateY(-170px);
+			}*/
+		}
+	}
+
+	
+
+	img {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	@media only screen and (min-width: 1600px) {
+		width: 33.333%;
+	}
+
+	/*
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+	}
+	*/
+}
+
+
+
+.work__title {
+	position: absolute;
+	display: block;
+	width: 100%;
+	bottom: 0px;
+	padding: 20px 20px;
+
+	text-align: right;
+
+	background-color: rgba(0,0,0,0.8);
+
+	z-index: 1;
+
+	transition: transform 0.2s ease; 
+}
+
+.client_name {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+
+	font-size: 18px;
+	font-family: 'Pro-Light',sans-serif;
+	line-height: 1;
+	color: white;
+
+	z-index: 1;
+}
+
+.project_location {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+
+	font-size: 18px;
+	font-family: 'AvantGarde-Bold', Helvetica, Arial;
+	line-height: 1;
+	color: rbga(0,0,0,0.6);
+}
+
+.work__background {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	background-size: cover;
+	background-position: center;
+
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+
+	transform-origin: 50% 50%;
+
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+}

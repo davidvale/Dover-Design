@@ -540,6 +540,7 @@ body,
   display: block;
   width: 100%;
   height: 80px;
+  top: 0;
   color: white;
   background-color: rgba(0,0,0,0.65);
   z-index: 2;
@@ -1043,4 +1044,129 @@ a:hover .facebook_logo {
 
 .slick-active .slide_title {
   top: 0px;
+}
+
+.work_wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  background: white;
+}
+
+.work__row {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.work__row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.work__cell {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.work__cell__container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work__cell__container:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.work__cell__container:hover .work__background {
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  transform: scale(1.06);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.work__cell img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (min-width:1600px) {
+  .work__cell {
+    width: 33.333%;
+  }
+}
+
+.work__title {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0px;
+  padding: 20px 20px;
+  text-align: right;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+.client_name {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Pro-Light',sans-serif;
+  line-height: 1;
+  color: white;
+  z-index: 1;
+}
+
+.project_location {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'AvantGarde-Bold',Helvetica,Arial;
+  line-height: 1;
+  color: rbga(0, 0, 0, .6);
+}
+
+.work__background {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
 }
