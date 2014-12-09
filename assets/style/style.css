@@ -1113,6 +1113,8 @@ a:hover .facebook_logo {
   padding-right: 10px;
   padding-bottom: 10px;
   float: left;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
 }
 
 .work__cell__container {
@@ -1225,22 +1227,6 @@ a:hover .facebook_logo {
   transform-origin: 50% 50%;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
-}
-
-.work__row__archive {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin-top: 0px;
-  padding-left: 10px;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-}
-
-.work__row__archive:after {
-  content: '';
-  display: table;
-  clear: both;
 }
 
 .archived {
