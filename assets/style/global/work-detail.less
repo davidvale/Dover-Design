@@ -1,3 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+}
+
+.work_detail_wrap {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	padding-right: 10px;
+
+	background: white;
+}
+
+.item {
+	float: left;
+	width:  33.3%;
+	height: auto;
+	
+	padding-left: 10px;
+	padding-bottom: 10px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.item_wrap {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height: 100%;
+}
+
+.quote { 
+	padding: 30px;
+
+	background-size: cover;
+}
+
+.client_quote {
+	display: inline-block;
+
+	color: #f8ac09;
+	font-size: 21px;
+	font-family: 'Pro-SemiBoldItalic', 'sans-serif';
+	line-height: 25px;
+
+	&::before {
+		content: '"';
+		font-style: italic;
+	}
+
+	&::after {
+		content: '"';
+		font-style: italic;
+	}
+}
+
+.client_roll {
+	display: inline-block;
+	margin-top: 20px;
+
+	color: #f8ac09;
+	font-size: 14px;
+	font-family: 'Pro-SemiBoldItalic', 'sans-serif';
+	line-height: 18px;
+	text-align: right;
+	opacity: 0.7;
+}
+
+	
+@media only screen and (max-width: 765px) {
+	.item {
+		width: 50%;
+	}
+	/*.quote {
+		width: 50%;
+	}*/
+}
+
+@media only screen and (max-width: 450px) {
+	.item {
+		width: 100%;
+	}
+	/*.quote {
+		width: 100%;
+	}*/
+}
+
+
+
+
+
+
+
+/* Only Css
+.work_detail_wrap {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+
+	background: white;
+}
+
+div#masonry { 
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap;
+  height: 3000px;
+  min-height: 600px;
+  max-height: 6000px;
+  font-size: 0;  
+}
+div#masonry img {  
+  width: 33.3%;
+
+	@media only screen and (max-width: 765px) {
+		width: 100%;
+	}
+} 
+
+/* fallback for earlier versions of Firefox */
+/* 
+@supports not (flex-wrap: wrap) {
+  div#masonry { display: block; }
+  div#masonry img {  
+  display: inline-block;
+  vertical-align: top;
+  }
+}
+*/
+ 
+
+
+
+
+
+
+
+/* Mansonry way
+
 .work_detail_wrap {
 	position: relative;
 	display: block;
@@ -5,36 +159,21 @@
 	height: 100%;
 	padding-top: 80px;
 	padding-bottom: 50px;
+
 	background: white;
 }
 
-.flex-container {
-	padding: 0;
-	margin: 0;
-	  
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	    
-	-webkit-flex-flow: row wrap;
-	-webkit-justify-content: space-around;
-	background: #eee;
-}
+.work_detail_item {
+	position: relative;
+	overflow: hidden!important;
+	float: left;
 
-
-.flex-item {
-	width: 50%;
-	height: auto;
-	overflow: hidden;
-	  
-	/*styling*/
-	background: tomato;
-	color: #fff;
+	background-color: #c23822;
+	
 
 	img {
 		display: block;
 		width: 100%;
+		height: auto;
 	}
-}
+}*/

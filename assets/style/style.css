@@ -253,6 +253,14 @@ body,
 }
 
 @font-face {
+  font-family: 'Pro-SemiBoldItalic';
+  src: url('/assets/fonts/SourceSansPro-SemiboldIt.eot');
+  src: url('/assets/fonts/SourceSansPro-SemiboldIt.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SourceSansPro-SemiboldIt.woff') format('woff'),url('/assets/fonts/SourceSansPro-SemiboldIt.svg#SourceSansPro-SemiboldIt') format('svg'),url('/assets/fonts/SourceSansPro-SemiboldIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Pro-Regular';
   src: url('/assets/fonts/SourceSansPro-Regular.eot');
   src: url('/assets/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SourceSansPro-Regular.woff') format('woff'),url('/assets/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg'),url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
@@ -1292,38 +1300,87 @@ a:hover .facebook_logo {
   display: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .work_detail_wrap {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
-  padding-top: 80px;
+  height: auto;
+  padding-top: 90px;
   padding-bottom: 50px;
+  padding-right: 10px;
   background: white;
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  background: #eee;
-}
-
-.flex-item {
-  width: 50%;
+.item {
+  float: left;
+  width: 33.3%;
   height: auto;
-  overflow: hidden;
-  background: tomato;
-  color: #fff;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
-.flex-item img {
-  display: block;
+.item img {
   width: 100%;
+}
+
+.item_wrap {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 100%;
+}
+
+.quote {
+  padding: 30px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.client_quote {
+  display: inline-block;
+  color: #f8ac09;
+  font-size: 21px;
+  font-family: 'Pro-SemiBoldItalic','sans-serif';
+  line-height: 25px;
+}
+
+.client_quote::before {
+  content: '"';
+  font-style: italic;
+}
+
+.client_quote::after {
+  content: '"';
+  font-style: italic;
+}
+
+.client_roll {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f8ac09;
+  font-size: 14px;
+  font-family: 'Pro-SemiBoldItalic','sans-serif';
+  line-height: 18px;
+  text-align: right;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width:765px) {
+  .item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .item {
+    width: 100%;
+  }
 }
