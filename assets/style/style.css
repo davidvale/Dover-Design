@@ -221,6 +221,19 @@ body,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.h4 {
+  font-family: 'Pro-RegularItalic',sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.007em;
+  text-transform: uppercase;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .p1 {
   font-family: 'Titillium Web',sans-serif;
   font-size: 21px;
@@ -264,6 +277,14 @@ body,
   font-family: 'Pro-Regular';
   src: url('/assets/fonts/SourceSansPro-Regular.eot');
   src: url('/assets/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SourceSansPro-Regular.woff') format('woff'),url('/assets/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg'),url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pro-RegularItalic';
+  src: url('/assets/fonts/SourceSansPro-It.eot');
+  src: url('/assets/fonts/SourceSansPro-It.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/SourceSansPro-It.woff') format('woff'),url('/assets/fonts/SourceSansPro-It.svg#SourceSansPro-It') format('svg'),url('/assets/fonts/SourceSansPro-It.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -1382,5 +1403,104 @@ a:hover .facebook_logo {
 @media only screen and (max-width:450px) {
   .item {
     width: 100%;
+  }
+}
+
+.about_wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-image: url(/assets/img/about_bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.about_wrap_inside {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.video_wrap {
+  position: relative;
+  display: block;
+  height: 0;
+  padding-bottom: 56.25%;
+  border: 2px solid black;
+}
+
+.video_wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about_content {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'Pro-Regular';
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.about_content span {
+  font-family: 'Pro-Bold';
+}
+
+.clients_secion {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.clients_item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  float: left;
+}
+
+.clients_item img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.clients_item a:hover img {
+  opacity: 1;
+}
+
+@media only screen and (max-width:765px) {
+  .clients_item {
+    width: 33.3%;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .clients_item {
+    width: 50%;
   }
 }
