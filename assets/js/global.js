@@ -24,6 +24,16 @@ $(document).ready(function(){
     $(".wrapper").addClass("no_scroll");
   });
 
+  // Team pop-up
+  $(".close_btn").click(function(){
+    $(".pop-up_wraper").addClass("no_pop-up");
+    $(".wrapper").removeClass("no_scroll");
+  });
+  $(".people_btn").click(function(){
+    $(".pop-up_wraper").removeClass("no_pop-up");
+    $(".wrapper").addClass("no_scroll");
+  });
+
   // Remove rollover
 
   if ('ontouchstart' in document.documentElement) {
