@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   // archive section - work page
   $(".archive_btn").click(function(){
-  	$(".work__row.more_proj").toggleClass("archived");
+  	$(".work__cell.more_proj").toggleClass("archived");
     $(".archive_btn.more").toggleClass("no_btn");
     $(".archive_btn.less").toggleClass("no_btn");
   });
@@ -25,7 +25,9 @@ $(document).ready(function(){
   });
 
   // Remove rollover
+
   if ('ontouchstart' in document.documentElement) {
+    document.querySelector('body').className='touch';
     try {
       var ignore = /:hover/;
 

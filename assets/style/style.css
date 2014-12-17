@@ -930,13 +930,13 @@ a:hover .linkedin_logo {
   height: 25px;
   left: 0;
   top: 0;
-  background-image: url(/assets/img/linkedin.svg);
+  background-image: url(/assets/img/facebook.svg);
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 
 a:hover .facebook_logo {
-  background-image: url(/assets/img/linkedin_hover.svg);
+  background-image: url(/assets/img/facebook_hover.svg);
 }
 
 @media only screen and (max-width:765px) {
@@ -1407,6 +1407,16 @@ a:hover .facebook_logo {
   -webkit-transition: 0.3s ease;
 }
 
+@media only screen and (max-width:450px) {
+  .client_name {
+    font-size: 13px;
+  }
+
+  .project_location {
+    font-size: 13px;
+  }
+}
+
 .archived {
   display: none;
   overflow: hidden;
@@ -1468,6 +1478,12 @@ a:hover .facebook_logo {
 
 .no_btn {
   display: none;
+}
+
+.touch .work__title {
+  -webkit-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  transform: translateY(-150px);
 }
 
 * {
