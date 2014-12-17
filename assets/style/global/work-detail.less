@@ -16,20 +16,18 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	padding-top: 85px;
+	padding-top: 80px;
 	padding-bottom: 50px;
-	padding-right: 5px;
 
 	background: white;
 }
 
 .item {
 	float: left;
-	width:  24.9999%;
+	width:  24.6%;
 	height: auto;
-	
-	padding-left: 5px;
-	padding-bottom: 3px;
+
+	margin: 5px 0.2% 0 0.2%;
 
 	img {
 		width: 100%;
@@ -294,13 +292,15 @@
 
 @media only screen and (max-width: 1025px) {
 	.item {
-		width: 33.3%;
+		width: 32.9%;
+		margin: 5px 0.2% 0 0.2%;
 	}
 }
 
 @media only screen and (max-width: 765px) {
 	.item {
-		width: 49.999%;
+		width: 49.4%;
+		margin: 5px 0.3% 0 0.3%;
 	}
 
 	.info_grid {
@@ -323,90 +323,7 @@
 
 @media only screen and (max-width: 450px) {
 	.item {
-		width: 100%;
+		width: 98.8%;
+		margin: 5px 0.6% 0 0.6%;
 	}
 }
-
-
-
-
-
-
-
-/* Only Css
-.work_detail_wrap {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-	padding-top: 80px;
-	padding-bottom: 50px;
-
-	background: white;
-}
-
-div#masonry { 
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  display: flex; 
-  flex-direction: column; 
-  flex-wrap: wrap;
-  height: 3000px;
-  min-height: 600px;
-  max-height: 6000px;
-  font-size: 0;  
-}
-div#masonry img {  
-  width: 33.3%;
-
-	@media only screen and (max-width: 765px) {
-		width: 100%;
-	}
-} 
-
-/* fallback for earlier versions of Firefox */
-/* 
-@supports not (flex-wrap: wrap) {
-  div#masonry { display: block; }
-  div#masonry img {  
-  display: inline-block;
-  vertical-align: top;
-  }
-}
-*/
- 
-
-
-
-
-
-
-
-/* Mansonry way
-
-.work_detail_wrap {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 100%;
-	padding-top: 80px;
-	padding-bottom: 50px;
-
-	background: white;
-}
-
-.work_detail_item {
-	position: relative;
-	overflow: hidden!important;
-	float: left;
-
-	background-color: #c23822;
-	
-
-	img {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-}*/

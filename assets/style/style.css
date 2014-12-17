@@ -1504,18 +1504,16 @@ a:hover .facebook_logo {
   display: block;
   width: 100%;
   height: auto;
-  padding-top: 85px;
+  padding-top: 80px;
   padding-bottom: 50px;
-  padding-right: 5px;
   background: white;
 }
 
 .item {
   float: left;
-  width: 24.9999%;
+  width: 24.6%;
   height: auto;
-  padding-left: 5px;
-  padding-bottom: 3px;
+  margin: 5px 0.2% 0 0.2%;
 }
 
 .item img {
@@ -1755,13 +1753,15 @@ a:hover .facebook_logo {
 
 @media only screen and (max-width:1025px) {
   .item {
-    width: 33.3%;
+    width: 32.9%;
+    margin: 5px 0.2% 0 0.2%;
   }
 }
 
 @media only screen and (max-width:765px) {
   .item {
-    width: 49.999%;
+    width: 49.4%;
+    margin: 5px 0.3% 0 0.3%;
   }
 
   .info_grid {
@@ -1784,7 +1784,8 @@ a:hover .facebook_logo {
 
 @media only screen and (max-width:450px) {
   .item {
-    width: 100%;
+    width: 98.8%;
+    margin: 5px 0.6% 0 0.6%;
   }
 }
 

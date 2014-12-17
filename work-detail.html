@@ -130,6 +130,7 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/global.js"></script>
         <script src="assets/js/mason.min.js"></script>
+        <script src='assets/js/masonry.pkgd.min.js'></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -141,12 +142,13 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src='assets/js/masonry.pkgd.min.js'></script>
+        
         <script>
             var container = document.querySelector('#masonry');
             var msnry = new Masonry( container, {
-              columnWidth: 1,
-              itemSelector: '.item'
+              // columnWidth: 1,
+              itemSelector: '.item',
+              // gutter: 5
             });
         </script>
 
