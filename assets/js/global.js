@@ -1,6 +1,6 @@
+$(document).ready(function(){
 
  // Global Nav 
-$(document).ready(function(){
   $(".wrap_menu_button").click(function(){
   	$(".header").toggleClass("header_on");
     $(".header_nav").toggleClass("nav_active");
@@ -37,6 +37,7 @@ $(document).ready(function(){
   // Remove rollover
 
   if ('ontouchstart' in document.documentElement) {
+    // Add class
     document.querySelector('body').className='touch';
     try {
       var ignore = /:hover/;
@@ -65,8 +66,6 @@ $(document).ready(function(){
       }
     } catch (e) {}
   }
-
-
 
 
 });

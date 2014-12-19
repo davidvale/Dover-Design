@@ -46,13 +46,14 @@
 .quote { 
 	padding: 30px;
 
+	color: #f8ac09;
 	background-size: cover;
 }
 
 .client_quote {
 	display: inline-block;
 
-	color: #f8ac09;
+	
 	font-size: 21px;
 	font-family: 'Pro-SemiBoldItalic', 'sans-serif';
 	line-height: 25px;
@@ -72,7 +73,6 @@
 	display: inline-block;
 	margin-top: 20px;
 
-	color: #f8ac09;
 	font-size: 14px;
 	font-family: 'Pro-SemiBoldItalic', 'sans-serif';
 	line-height: 18px;
@@ -102,21 +102,18 @@
 	color: white;
 
 	z-index: 10;
+}
 
+.overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right:0;
-	    bottom:0;
-
-	    background-color: rgba(0,0,0,0.7);
-
-	    z-index: -1;
-	}
-
+	background-color: rgba(0,0,0,0.7);
+	z-index: -1;
 }
 
 .pop-up_container {

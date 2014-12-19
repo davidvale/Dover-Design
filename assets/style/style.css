@@ -1531,13 +1531,13 @@ a:hover .facebook_logo {
 
 .quote {
   padding: 30px;
+  color: #f8ac09;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
 .client_quote {
   display: inline-block;
-  color: #f8ac09;
   font-size: 21px;
   font-family: 'Pro-SemiBoldItalic','sans-serif';
   line-height: 25px;
@@ -1556,7 +1556,6 @@ a:hover .facebook_logo {
 .client_roll {
   display: inline-block;
   margin-top: 20px;
-  color: #f8ac09;
   font-size: 14px;
   font-family: 'Pro-SemiBoldItalic','sans-serif';
   line-height: 18px;
@@ -1582,13 +1581,13 @@ a:hover .facebook_logo {
   z-index: 10;
 }
 
-.pop-up_wraper::after {
-  content: "";
+.overlay {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
   background-color: rgba(0,0,0,0.7);
   z-index: -1;
 }

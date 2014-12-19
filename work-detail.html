@@ -149,20 +149,17 @@
                     </div>
                 </div>
             </div>
-            <div class="overlay"></div>
+            <a class="overlay"></a>
         </div>
-        
-        
-
-
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/global.js"></script>
-        <script src="assets/js/mason.min.js"></script>
+        <script src="assets/js/masonry_grid.js"></script>
         <script src='assets/js/masonry.pkgd.min.js'></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -173,43 +170,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
-        
-        <script>
-            var container = document.querySelector('#masonry');
-            var msnry = new Masonry( container, {
-              // columnWidth: 1,
-              itemSelector: '.item',
-              // gutter: 5
-            });
-        </script>
-
-        <!-- Call the carousel Plugin -->
-        <!--<script>
-            $(function(){
-                $(".work_detail_wrap").mason({
-                    itemSelector: ".work_detail_item",
-                    ratio: 1.1,
-                    sizes: [
-                        [1,1],
-                        [1,2]
-                    ],
-                    columns: [
-                        [0,480,1],
-                        [480,780,2],
-                        [780,1080,3],
-                        [1080,1320,4],
-                        [1320,1680,5]
-                    ],
-                    // filler: {
-                    //     itemSelector: '.fillerBox',
-                    //     filler_class: 'custom_filler'
-                    // },
-                    layout: 'fluid',
-                    gutter: 3,
-                });
-            });
-
-        </script>-->
     </body>
 </html>

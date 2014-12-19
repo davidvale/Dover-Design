@@ -23,4 +23,27 @@
 
 // Place any jQuery/helper plugins in here.
 
+$(document).ready(function(){
+    // Homepage carousel
+    if ($('.slideshow').length > 0) {
+        $('.slideshow').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            slide: 'div',
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+    }
 
+    // // Work details & Team grid
+    // var container = document.querySelector('#masonry');
+    // var msnry = new Masonry( container, {
+    //   // columnWidth: 1,
+    //   itemSelector: '.item',
+    //   // gutter: 5
+    // });
+});
