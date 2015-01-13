@@ -1,0 +1,704 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"do",
+				"download_btn_container"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"pop",
+				"pop-up_wraper"
+			],
+			[
+				"let",
+				"left"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"pd",
+				"padding-right"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"bacg",
+				"background-color"
+			],
+			[
+				"padi",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"a",
+				"after"
+			],
+			[
+				"link",
+				"linkedin_logo"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"footer",
+				"footer_nav"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"bag",
+				"background-repeat"
+			],
+			[
+				"wi",
+				"white"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"bore",
+				"border"
+			],
+			[
+				"scale",
+				"scale-bg"
+			],
+			[
+				"conten",
+				"content-test"
+			],
+			[
+				"detai",
+				"detail"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"detail",
+				"detail-content"
+			],
+			[
+				"wh",
+				"width"
+			],
+			[
+				"ge",
+				"AvantGarde-Medium"
+			],
+			[
+				"fonty",
+				"font-family"
+			],
+			[
+				"magi",
+				"margin-left"
+			],
+			[
+				"word",
+				"wordpress"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"fonte",
+				"font-size"
+			],
+			[
+				"r",
+				"rbbj-2014"
+			],
+			[
+				"rbbj",
+				"rbbj-2014"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"of",
+				"off-canvas"
+			],
+			[
+				"use",
+				"user-experience"
+			],
+			[
+				"ela",
+				"ellas-guide"
+			],
+			[
+				"fg",
+				"fg-light"
+			],
+			[
+				"ella",
+				"ellas-guide"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"ell",
+				"ellas-guide"
+			],
+			[
+				"ellas",
+				"ellas-guide"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"sty",
+				"list-style"
+			],
+			[
+				"ima",
+				"background-image"
+			],
+			[
+				"backgroung",
+				"background-image"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"not",
+				"no-repeat"
+			],
+			[
+				"color",
+				"color"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"book",
+				"book-form"
+			],
+			[
+				"i",
+				"pointer"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"te",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"specia",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/davidvale/Downloads/masonry-docs/index.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/slick.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/plugins.js",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/masonry_grid.js",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/styleguide.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/typography.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/index.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/team.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/team.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-detail.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/global.js",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/home.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work-detail.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/header.less",
+		"/Applications/MAMP/htdocs/New-Work-page/index.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/footer.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/global.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/About.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/about.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/style.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-page.less",
+		"/Users/davidvale/Downloads/masonry_layout/index.html",
+		"/Users/davidvale/Downloads/Mason-master/example/fluid.html",
+		"/Users/davidvale/Downloads/Mason-master/example/fixed.html",
+		"/Users/davidvale/Downloads/Mason-master/example/index.html",
+		"/Users/davidvale/Dropbox/DELETE/Delete_Site/New-Work-page_v3/index.html",
+		"/Users/davidvale/Downloads/animate.css",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/img/linkedin.svg",
+		"/Users/davidvale/Dropbox/CODE/center-table.html",
+		"/Users/davidvale/Downloads/BackgroundSlideshow/css/default.css",
+		"/Users/davidvale/Downloads/BackgroundSlideshow/css/component.css",
+		"/Users/davidvale/Downloads/BackgroundSlideshow/index.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/owl.carousel.js",
+		"/Users/davidvale/1-Work/3_Clients/The Botto House/site/Dover-Design/my template/assets/style/style.less",
+		"/Users/davidvale/1-Work/3_Clients/The Botto House/site/Dover-Design/my template/index.html",
+		"/Users/davidvale/1-Work/3_Clients/The Botto House/site/Dover-Design/my template/index 2.html",
+		"/Applications/MAMP/htdocs/New-Work-page/assets/style/global/work-page.less",
+		"/Users/davidvale/Dropbox/DELETE/Banners/1-banners/sky-160x600.html",
+		"/Users/davidvale/Dropbox/DELETE/Banners/1-banners/mpu-300x250.html",
+		"/Users/davidvale/Dropbox/DELETE/Banners/1-banners/doublempu-300x600html.html",
+		"/Users/davidvale/Dropbox/DELETE/Banners/1-banners/leaderboard-728x90.html",
+		"/Users/davidvale/Dropbox/DELETE/Banners/index.html",
+		"/Users/davidvale/Dropbox/DELETE/Banners/content/content.js",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/bonus boiler/index.html",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/bonus boiler/css/style.css",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/bonus boiler/css/fonts.css",
+		"/Users/davidvale/Desktop/zoom-test.html",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/bonus boiler/cena.html",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/only-html/index.html",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/httpdocs/lessc.inc.php",
+		"/Users/davidvale/Dropbox/Bonus Project/Site/bonus_5-8-14/httpdocs/assets/css/text.less",
+		"/Users/davidvale/Dropbox/CODE/html5-boilerplate-4.3.0/README.md",
+		"/Users/davidvale/Dropbox/DELETE/html-preentation-tool/v2/index.html",
+		"/Users/davidvale/Dropbox/DELETE/html-preentation-tool/v2/style/style.css",
+		"/Users/davidvale/Dropbox/Epedia-TYI/loader/center-table.html",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/swipe.js",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/style.css",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/index.html",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/flip/css/flip.css",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/flip/js/flip.js",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/flip/index.html",
+		"/Users/davidvale/Dropbox/CODE/flashbroken-animation/flash.html",
+		"/Users/davidvale/1-Work/1_Internal/Review_16-02-14/flip/flip",
+		"/Users/davidvale/1-Work/1_Internal/Site_2014/wordpress/wp-config.php",
+		"/Users/davidvale/1-Work/1_Internal/Site_2014/wordpress/wp-config-sample.php",
+		"/Users/davidvale/Desktop/Delete/case_studies/bin/assets/css/pages/rbbj2014.less",
+		"/Users/davidvale/Desktop/Delete/case_studies/bin/rbbj2014.html",
+		"/Users/davidvale/Desktop/Delete/case_studies/bin/assets/css/pages/ellas.less",
+		"/Users/davidvale/Desktop/Delete/case_studies/bin/ellas.html",
+		"/Users/davidvale/Desktop/Delete/rbbj/assets/css/case.css",
+		"/Users/davidvale/Dropbox/Case Study/RBBJ/assets/css/case.css",
+		"/Users/davidvale/Dropbox/Case Study/RBBJ/assets/assets/css/case.css",
+		"/Users/davidvale/Desktop/Delete/rbbj/assets/assets/css/case.css",
+		"/Users/davidvale/Desktop/Delete/rbbj/index.html",
+		"/Users/davidvale/Desktop/Delete/Bedroom-Jam/index.html",
+		"/Users/davidvale/Desktop/Delete/Bedroom-Jam/assets/css/case.css",
+		"/Users/davidvale/Desktop/Delete/Ellas-case-study/index.html",
+		"/Users/davidvale/Desktop/Delete/Ellas-case-study/assets/css/case.css",
+		"/Users/davidvale/Downloads/table.html",
+		"/Users/davidvale/Desktop/Delete/Ellas-case-study/assets/css/case3.css",
+		"/Users/davidvale/Desktop/Delete/assets/css/fonts.css",
+		"/Users/davidvale/Desktop/Delete/assets/css/_case.css",
+		"/Volumes/DELETE USB/index.html",
+		"/Users/davidvale/Dropbox/DAVid_new-site/david-vale/index.html",
+		"/Users/davidvale/Dropbox/DAVid_new-site/david-vale/js/parallax.js",
+		"/Volumes/DAVID 1/Berlin/Berlin/4_map_online.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/4_map.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/3_host.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/1_cover.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/2_contents.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/6_ad.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/5_postcards.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/4d_itinerary.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/4c_itinerary.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/4b_itinerary.html",
+		"/Volumes/DAVID 1/Berlin/Berlin/4a_itinerary.html",
+		"/Users/davidvale/Dropbox/CLIENTS/Flux Travel/Site/html/litmus.css",
+		"/Users/davidvale/Dropbox/CLIENTS/Flux Travel/Site/html/letmus.html",
+		"/Users/davidvale/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/davidvale/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ajax-loader.gif",
+			"page-loader.gif",
+			"location",
+			"item",
+			">\n",
+			"c4",
+			"w",
+			"grid_item_team",
+			"roll",
+			"client_ro",
+			"item",
+			"utter: 5",
+			"hero-masonry",
+			"her",
+			"work",
+			"work__cell",
+			"tou",
+			"black",
+			"white",
+			"black",
+			"2s",
+			"infinite",
+			"running",
+			"medium",
+			"thumbnail",
+			".item",
+			".",
+			"work_detail_item",
+			".work_detail_wrap",
+			" -->",
+			"<!--",
+			"<img src=\"assets/content/home/home_1.jpg\">",
+			"-webkit-",
+			"5",
+			"255",
+			"f",
+			"tit",
+			"cro",
+			"patter",
+			"20px",
+			"body",
+			"wrapper",
+			"wra",
+			"wi",
+			"	bottom: 0;\n	bottom: 0;\nwrapper",
+			"	bottom: 0;\n	bottom: 0;\nwrap",
+			"wrap",
+			"30px",
+			"25",
+			"nav",
+			"header_on",
+			"20px",
+			"css",
+			"owl.theme",
+			"owl.carousel",
+			"css",
+			"content",
+			"255",
+			"1",
+			"6",
+			"h4",
+			"white",
+			"ite",
+			"ite\nitem",
+			"ite\nite",
+			"container",
+			"ite",
+			"hero",
+			"h2",
+			"0px",
+			"button",
+			".d1",
+			"d1",
+			"}\n",
+			";\n",
+			"img",
+			"div",
+			"bg",
+			"right",
+			"page",
+			"pages",
+			"ellas",
+			"ellas-guide",
+			"solution",
+			"bottom-im",
+			"scale",
+			".scale",
+			"scale",
+			"h1",
+			"tag",
+			"page",
+			"solution",
+			"#user",
+			"fruit",
+			"block",
+			"ellas",
+			"video",
+			"fruits",
+			".fruits",
+			".fru",
+			"li",
+			".video",
+			".scale",
+			"ol",
+			"ul",
+			"ol",
+			"break",
+			"break-grid",
+			"out",
+			".out",
+			"h3",
+			".hr-line",
+			".video",
+			".full",
+			".fg",
+			"ellas-guide",
+			".ellas-guide",
+			".fg",
+			".bg",
+			".fg",
+			"ph",
+			"fru",
+			"fg",
+			"border-top",
+			"iframe",
+			"strok",
+			".intro",
+			"ol"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"caffe-nero",
+			".rbbj",
+			"#user-experience",
+			"ellas-guide",
+			".ellas-guide"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true
+}

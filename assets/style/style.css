@@ -1175,6 +1175,8 @@ a:hover .facebook_logo {
   background-repeat: no-repeat;
   animation: image_zoom 50s forwards;
   -webkit-animation: image_zoom 50s forwards;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes image_zoom {
@@ -1274,7 +1276,7 @@ a:hover .facebook_logo {
     opacity: 0;
   }
 
-  70% {
+  50% {
     -webkit-transform: translateY(-200px);
     opacity: 0;
   }
@@ -1291,7 +1293,7 @@ a:hover .facebook_logo {
     opacity: 0;
   }
 
-  70% {
+  50% {
     -webkit-transform: translateY(-200px);
     opacity: 0;
   }
@@ -1313,7 +1315,7 @@ a:hover .facebook_logo {
     opacity: 0;
   }
 
-  70% {
+  50% {
     -webkit-transform: translateY(200px);
     opacity: 0;
   }
@@ -1330,7 +1332,7 @@ a:hover .facebook_logo {
     opacity: 0;
   }
 
-  70% {
+  50% {
     -webkit-transform: translateY(200px);
     opacity: 0;
   }
