@@ -334,7 +334,7 @@ body,
   font-weight: 700;
   letter-spacing: 0.007em;
   text-transform: uppercase;
-  color: #666;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1865,7 +1865,7 @@ a:hover .facebook_logo {
   display: block;
   width: 100%;
   height: auto;
-  background-image: url(/assets/img/about_bg.jpg);
+  background-image: url(/assets/content/about/about_bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -1876,12 +1876,14 @@ a:hover .facebook_logo {
   display: block;
   width: 100%;
   max-width: 800px;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  background-color: rgba(36,36,36,0.95);
 }
 
 .video_wrap {
@@ -1904,28 +1906,42 @@ a:hover .facebook_logo {
   position: relative;
   display: block;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 20px;
-  font-family: 'Pro-Regular';
+  color: white;
+  font-family: 'Pro-Light';
   font-size: 15px;
-  line-height: 18px;
+  line-height: 22px;
   letter-spacing: 0.5px;
-  background-color: rgba(255,255,255,0.8);
 }
 
-.about_content span {
-  font-family: 'Pro-Bold';
+.about_title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+}
+
+.about_line {
+  display: inline-block;
+  border-color: #dd6d26;
+  width: 30%;
+}
+
+.about_title_text {
+  display: inline-block;
+  width: 30%;
+  margin: 5%;
+  padding: 10px;
+  border: 1px solid white;
 }
 
 .clients_secion {
   position: relative;
   display: inline-block;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding: 20px;
   text-align: center;
-  background-color: rgba(255,255,255,0.8);
 }
 
 .clients_item {
@@ -1950,6 +1966,15 @@ a:hover .facebook_logo {
 @media only screen and (max-width:765px) {
   .clients_item {
     width: 33.3%;
+  }
+
+  .about_line {
+    width: 15%;
+  }
+
+  .about_title_text {
+    width: 60%;
+    margin: 5%;
   }
 }
 
