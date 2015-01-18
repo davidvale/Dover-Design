@@ -16,11 +16,11 @@ $(document).ready(function(){
 
   // work pop-up
   $(".close_btn").click(function(){
-    $(".pop-up_wraper").addClass("no_pop-up");
+    $(".work_pop-up_wraper").addClass("no_pop-up");
     $(".wrapper").removeClass("no_scroll");
   });
   $(".case-study_btn").click(function(){
-    $(".pop-up_wraper").removeClass("no_pop-up");
+    $(".work_pop-up_wraper").removeClass("no_pop-up");
     $(".wrapper").addClass("no_scroll");
   });
 
@@ -29,8 +29,19 @@ $(document).ready(function(){
     $(".pop-up_wraper").addClass("no_pop-up");
     $(".wrapper").removeClass("no_scroll");
   });
-  $(".people_btn").click(function(){
-    $(".pop-up_wraper").removeClass("no_pop-up");
+
+  $(".pop-1").click(function(){
+    $(".pop-up_1").removeClass("no_pop-up");
+    $(".wrapper").addClass("no_scroll");
+  });
+
+  $(".pop-2").click(function(){
+    $(".pop-up_2").removeClass("no_pop-up");
+    $(".wrapper").addClass("no_scroll");
+  });
+
+  $(".pop-3").click(function(){
+    $(".pop-up_3").removeClass("no_pop-up");
     $(".wrapper").addClass("no_scroll");
   });
 

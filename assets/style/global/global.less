@@ -7,6 +7,52 @@ html, body, .wrapper {
 }
 
 
+/*  Button  */
+
+.button-orange {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	border: 2px solid @orange;
+
+	background-color: black;
+
+	color: white;
+	font-family: 'Pro-Regular',sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: inline-flex;
+		width: 0;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: @orange;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+	}
+
+	span {
+		position: relative;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+		z-index: 0;
+	}
+
+	&:hover {
+		color: white;
+	}
+
+	&:hover::before {
+		width: 100%;
+	}
+}
 
 
 
@@ -70,6 +116,37 @@ html, body, .wrapper {
 }
 
 .pop-up_wraper {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right:0;
+    bottom:0;
+    padding: 20px;
+
+	color: white;
+
+	z-index: 10;
+
+
+	/* Overlay */
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right:0;
+	    bottom:0;
+
+	    background-color: rgba(0,0,0,0.7);
+
+	    z-index: -1;
+	}
+
+}
+.work_pop-up_wraper {
 	position: absolute;
 	display: block;
 	overflow: hidden;

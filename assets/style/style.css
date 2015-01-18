@@ -191,6 +191,50 @@ body,
   width: 100%;
 }
 
+.button-orange {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid #dd6d26;
+  background-color: black;
+  color: white;
+  font-family: 'Pro-Regular',sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-orange::before {
+  content: '';
+  position: absolute;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #dd6d26;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.button-orange span {
+  position: relative;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 0;
+}
+
+.button-orange:hover {
+  color: white;
+}
+
+.button-orange:hover::before {
+  width: 100%;
+}
+
 .grid_item {
   float: left;
   height: auto;
@@ -264,6 +308,31 @@ body,
 }
 
 .pop-up_wraper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: -1;
+}
+
+.work_pop-up_wraper {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+  z-index: 10;
+}
+
+.work_pop-up_wraper::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1865,6 +1934,10 @@ a:hover .facebook_logo {
   display: block;
   width: 100%;
   height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-image: url(/assets/content/about/about_bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
@@ -2047,27 +2120,51 @@ a:hover .facebook_logo {
 }
 
 .team_lighbox {
-  height: 75%;
+  height: auto;
+  background-color: white;
 }
 
 .team_info {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  margin-top: 10%;
+  padding: 40px 40px 40px 0px;
+  color: black;
+}
+
+.team_title {
   display: block;
-  padding: 40px;
+  width: 100%;
 }
 
 .team_info_name {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-family: 'Pro-Bold',sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.team_info_subtitle {
-  display: inline-block;
+.team_info_roll {
+  margin-bottom: 30px;
+  font-family: 'Pro-Light',sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-style: italic;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .team_info_photo {
   display: inline-block;
   float: left;
   width: 50%;
-  padding: 0 40px 40px 40px;
+  padding: 20px;
 }
 
 .team_info_photo img {
@@ -2075,10 +2172,7 @@ a:hover .facebook_logo {
 }
 
 .team_info_copy {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  padding: 0 40px 40px 20px;
+  display: block;
 }
 
 .close_btn {
@@ -2088,9 +2182,10 @@ a:hover .facebook_logo {
   top: 0;
   right: 0;
   margin: 20px;
-  background-image: url(/assets/img/close_btn.svg);
+  background-image: url(/assets/img/close_btn_b.svg);
   -webkit-background-size: 100%;
   background-size: 100%;
+  z-index: 99;
   transition: all .2s;
   -webkit-transition: all .2s;
 }
@@ -2102,21 +2197,75 @@ a:hover .facebook_logo {
 }
 
 @media only screen and (max-width:765px) {
-  .team_lighbox {
-    height: 100%;
-  }
-
-  .team_info {
+  .team_info_photo {
+    width: 100%;
     padding: 30px;
   }
 
-  .team_info_photo {
+  .team_info {
     width: 100%;
-    padding: 0 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
+    margin-top: 0;
   }
 
-  .team_info_copy {
+  .close_btn {
+    margin: 10px;
+  }
+}
+
+.contact_wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(/assets/content/contact/contact_bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact_wrap_inside {
+  position: relative;
+  display: block;
+  width: 340px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.contact_content {
+  position: relative;
+  display: block;
+  padding: 20px;
+  padding-top: 80px;
+  color: white;
+  background-color: #dd6d26;
+  text-align: left;
+  display: inline-block;
+  font-family: 'Pro-Light',sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contact_title {
+  font-family: 'Pro-Bold',sans-serif;
+  text-transform: uppercase;
+}
+
+.directions {
+  margin-top: 5px;
+  float: right;
+}
+
+@media only screen and (max-width:400px) {
+  .contact_wrap_inside {
     width: 100%;
-    padding: 0 30px 30px 30px;
   }
 }
