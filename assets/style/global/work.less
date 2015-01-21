@@ -197,9 +197,10 @@
 	display: inline-block;
 	margin: 0 auto;
 	padding: 10px 20px;
-	border: 2px solid black;
+	border: 2px solid @orange;
+	background-color: black;
 
-	color: black;
+	color: white;
 	font-family: 'Pro-Regular',sans-serif;
 	font-size: 15px;
 	text-decoration: none;
@@ -212,7 +213,7 @@
 		height: 100%;
 		left: 0;
 		top: 0;
-		background: black;
+		background: @orange;
 		-webkit-transition: all .2s;
 		transition: all .2s;
 	}
@@ -225,7 +226,6 @@
 	}
 
 	&:hover {
-		color: white;
 	}
 
 	&:hover::before {

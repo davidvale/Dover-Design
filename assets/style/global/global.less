@@ -7,11 +7,27 @@ html, body, .wrapper {
 }
 
 
+.bandw {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+
+	&:hover {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+	}
+}
+
 /*  Button  */
 
 .button-orange {
 	position: relative;
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 	padding: 10px 20px;
 	border: 2px solid @orange;
@@ -128,7 +144,7 @@ html, body, .wrapper {
 
 	color: white;
 
-	z-index: 10;
+	z-index: 100;
 
 
 	/* Overlay */
@@ -190,7 +206,8 @@ html, body, .wrapper {
 	margin: 0 auto;
 	/*padding: 40px;*/
 
-	background-color: #363636;
+	background-color: white;
+	color: black;
 }
 
 .pop-up_content {

@@ -72,13 +72,69 @@
 
 
 
+/*  button  */
+
+
+.team-button {
+	position: absolute;
+	display: block;
+	padding: 17px 20px;
+	border: 2px solid @orange;
+
+	bottom: 0;
+	margin: 20px;
+
+	background-color: black;
+
+	color: white;
+	font-family: 'Pro-Regular',sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: inline-flex;
+		width: 0;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: @orange;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+	}
+
+	span {
+		position: relative;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+		z-index: 0;
+	}
+
+	&:hover {
+		color: white;
+	}
+
+	&:hover::before {
+		width: 100%;
+	}
+}
+
+
 
 
 /* ---- Light box -----*/
 
 .team_lighbox {
-	height: auto;
+
+	height: 61%;
 	background-color: white;
+
+	@media only screen and (max-width: 765px) {
+		height: 95%;
+	}
 }
 
 .team_info {
