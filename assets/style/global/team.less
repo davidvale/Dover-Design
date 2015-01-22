@@ -33,6 +33,13 @@
 
 .people_btn {
 	cursor: pointer;
+	overflow: hidden;
+
+	&:hover {
+		.team-button {
+			transform: translateY(-150px);
+		}
+	}
 }
 
 .team_btn {
@@ -76,49 +83,15 @@
 
 
 .team-button {
-	position: absolute;
-	display: block;
-	padding: 17px 20px;
-	border: 2px solid @orange;
+	&:extend(.work__title);
+	text-align:left;
 
-	bottom: 0;
-	margin: 20px;
-
-	background-color: black;
-
-	color: white;
-	font-family: 'Pro-Regular',sans-serif;
-	font-size: 15px;
-	text-decoration: none;
-
-	cursor: pointer;
-
-	&::before {
-		content: '';
-		position: absolute;
-		display: inline-flex;
-		width: 0;
-		height: 100%;
-		left: 0;
-		top: 0;
-		background: @orange;
-		-webkit-transition: all .2s;
-		transition: all .2s;
+	.team-member-name {
+		&:extend(.client_name);
 	}
 
-	span {
-		position: relative;
-		-webkit-transition: all .2s;
-		transition: all .2s;
-		z-index: 0;
-	}
-
-	&:hover {
-		color: white;
-	}
-
-	&:hover::before {
-		width: 100%;
+	.team-member-role {
+		&:extend(.project_location);
 	}
 }
 
@@ -246,5 +219,13 @@
 }
 
 @media only screen and (max-width: 450px) {
-	
+
+}
+
+.touch {
+
+	.team-button {
+		&:extend(.touch .work__title);
+	}
+
 }
