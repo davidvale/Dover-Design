@@ -17,10 +17,10 @@
 	-ms-transition: 0.3s ease;
 }
 
-.header_on {
+/*.header_on {
 	background-color: black;
 }
-
+*/
 
 
 /*---- Logo ----*/
@@ -76,9 +76,9 @@
 	margin-top: 10px;
 	margin-right: 10px;
 
-	transform: translateX(100%);
+	/*transform: translateX(100%);
 	-webkit-transform: translateX(100%);
-	-ms-transform: translateX(100%);
+	-ms-transform: translateX(100%);*/
 
 	transition: 0.3s ease;
 	-webkit-transition: 0.3s ease;
@@ -86,7 +86,7 @@
 	-o-transition: 0.3s ease;
 	-ms-transition: 0.3s ease;
 
-	opacity: 0;
+	/*opacity: 0;*/
 }
 
 .nav_item {
@@ -178,7 +178,7 @@
 
 .wrap_menu_button {
 	position: relative;
-	display: block;
+	display: none;
 	float: right;
 	width: 40px;
 	height: 40px;
@@ -262,6 +262,14 @@
 @media only screen and (max-width: 765px) {
 	.header_menu {
 		width: 100%;
+	}
+
+	.header_on {
+		background-color: black;
+	}
+
+	.wrap_menu_button {
+		display: block;
 	}
 
 	.wrap_nav {

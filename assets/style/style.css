@@ -786,10 +786,6 @@ body,
   -webkit-transition: 0.3s ease;
 }
 
-.header_on {
-  background-color: black;
-}
-
 .header_logo {
   position: absolute;
   display: block;
@@ -830,12 +826,8 @@ body,
   position: relative;
   margin-top: 10px;
   margin-right: 10px;
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
-  opacity: 0;
 }
 
 .nav_item {
@@ -910,7 +902,7 @@ body,
 
 .wrap_menu_button {
   position: relative;
-  display: block;
+  display: none;
   float: right;
   width: 40px;
   height: 40px;
@@ -973,6 +965,14 @@ body,
 @media only screen and (max-width:765px) {
   .header_menu {
     width: 100%;
+  }
+
+  .header_on {
+    background-color: black;
+  }
+
+  .wrap_menu_button {
+    display: block;
   }
 
   .wrap_nav {
@@ -1146,6 +1146,21 @@ a:hover .linkedin_logo {
 
 a:hover .facebook_logo {
   background-image: url(/assets/img/facebook_hover.svg);
+}
+
+.twitter_logo {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  top: 0;
+  background-image: url(/assets/img/twitter.svg);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+a:hover .twitter_logo {
+  background-image: url(/assets/img/twitter_hover.svg);
 }
 
 .instagram_logo {
@@ -2268,7 +2283,7 @@ a:hover .instagram_logo {
 .contact_wrap_inside {
   position: relative;
   display: block;
-  width: 340px;
+  width: 400px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -2276,12 +2291,11 @@ a:hover .instagram_logo {
 .contact_content {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 40px;
   padding-top: 80px;
   color: white;
   background-color: #db5207;
   text-align: left;
-  display: inline-block;
   font-family: 'Pro-Light',sans-serif;
   font-size: 13px;
   line-height: 19px;
@@ -2294,6 +2308,15 @@ a:hover .instagram_logo {
 .contact_title {
   font-family: 'Pro-Bold',sans-serif;
   text-transform: uppercase;
+}
+
+.contact_info {
+  color: white!important;
+}
+
+.contact_info a {
+  text-decoration: none;
+  color: white!important;
 }
 
 .directions {

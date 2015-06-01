@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"tem",
+				"team_info"
+			],
+			[
 				"do",
 				"download_btn_container"
 			],
@@ -12,20 +40,12 @@
 				"padding"
 			],
 			[
-				"padd",
-				"padding-left"
-			],
-			[
 				"fot",
 				"font-size"
 			],
 			[
 				"mari",
 				"margin"
-			],
-			[
-				"margi",
-				"margin-bottom"
 			],
 			[
 				"mar",
@@ -60,20 +80,12 @@
 				"inline-block"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"margin",
 				"margin-left"
 			],
 			[
 				"back",
 				"background-color"
-			],
-			[
-				"tex",
-				"text-align"
 			],
 			[
 				"font",
@@ -190,10 +202,6 @@
 			[
 				"backgr",
 				"background-position"
-			],
-			[
-				"le",
-				"letter-spacing"
 			],
 			[
 				"rgb",
@@ -368,28 +376,34 @@
 	},
 	"file_history":
 	[
+		"/Users/davidvale/Desktop/style.css",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/header.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/footer.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/index.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/team.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/global.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/team.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/global.js",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work-detail.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-detail.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/about.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/_team.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/contact.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/contact.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/home.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/about.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/styleguide.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/typography.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/style.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/slick.min.js",
 		"/Users/davidvale/Downloads/masonry-docs/index.html",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/slick.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/plugins.js",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/masonry_grid.js",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/styleguide.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/typography.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/index.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/team.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/team.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-detail.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/global.js",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/home.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work-detail.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/header.less",
 		"/Applications/MAMP/htdocs/New-Work-page/index.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/footer.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/global.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/About.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/about.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/style.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-page.less",
 		"/Users/davidvale/Downloads/masonry_layout/index.html",
 		"/Users/davidvale/Downloads/Mason-master/example/fluid.html",
@@ -488,6 +502,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div",
+			"margin",
+			"find_more_btn",
+			"4",
+			"50s",
+			"hover",
+			"true",
+			"false",
+			"_.paused === false",
 			"ajax-loader.gif",
 			"page-loader.gif",
 			"location",
@@ -606,16 +629,7 @@
 			"ellas-guide",
 			".ellas-guide",
 			".fg",
-			".bg",
-			".fg",
-			"ph",
-			"fru",
-			"fg",
-			"border-top",
-			"iframe",
-			"strok",
-			".intro",
-			"ol"
+			".bg"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -641,6 +655,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -660,11 +679,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.955880418771,
 			1.0
 		],
 		"rows":
