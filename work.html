@@ -159,13 +159,17 @@
                         </a>
                     </div>
 
-                    <div class="load_more">
-                        <div class="archive_btn more"><span>Load More Projects</span></div>
-                        <div class="archive_btn less no_btn"><span>Hide Projects</span></div>
+                    <div class="filter-button-group js-radio-button-group load_more">
+                        <button class="archive_btn more" data-filter=".archive, *">
+                            <span>Load More Projects</span>
+                        </button>
+                        <button class="archive_btn less no_btn" data-filter="*">
+                            <span>Hide Projects</span>
+                        </button>
                     </div>
 
                     <div class="grid work__row">
-                        <a href="work-detail.html" class="element-item work__cell brand more_proj archived" data-category="brand">
+                        <a href="work-detail.html" class="element-item work__cell brand more_proj archived" data-category="brand, archive">
                             <div class="work__cell__container">
                                 <div class="work_wrapper">
                                     <span class="new-work"></span>
@@ -177,7 +181,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="work-detail.html" class="element-item work__cell interior more_proj archived" data-category="interior">
+                        <a href="work-detail.html" class="element-item work__cell interior more_proj archived" data-category="brand, archive">
                             <div class="work__cell__container">
                                 <div class="work_wrapper">
                                     <span class="new-work"></span>
@@ -189,7 +193,7 @@
                                 </div>
                             </div>
                         </a>
-                         <a href="work-detail.html" class="element-item work__cell brand more_proj archived" data-category="brand">
+                         <a href="work-detail.html" class="element-item work__cell brand more_proj archived" data-category="interior, archive">
                             <div class="work__cell__container">
                                 <div class="work_wrapper">
                                     <span class="new-work"></span>
@@ -201,7 +205,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="work-detail.html" class="element-item work__cell interior more_proj archived" data-category="interior">
+                        <a href="work-detail.html" class="element-item work__cell interior more_proj archived" data-category="interior, archive">
                             <div class="work__cell__container">
                                 <div class="work_wrapper">
                                     <span class="new-work"></span>
