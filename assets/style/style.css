@@ -1506,6 +1506,10 @@ a:hover .instagram_logo {
   }
 }
 
+.grid_wrapper {
+  padding-left: 5px;
+}
+
 .work_wrap {
   position: relative;
   display: block;
@@ -1516,12 +1520,101 @@ a:hover .instagram_logo {
   background: white;
 }
 
+button {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filter_nav {
+  position: relative;
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+
+.filter_nav_item {
+  display: inline-block;
+  padding: 0 0 0 5px;
+  border-left: 1px solid rgba(0,0,0,0.8);
+  border-right: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.filter_nav_item:first-child {
+  border: none;
+}
+
+.filter_nav_item .filter_btn {
+  position: relative;
+  display: block;
+  padding: 3px 10px;
+  color: black;
+  font-size: 15px;
+  font-family: "Pro-Light";
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:450px) {
+  .filter_nav_item .filter_btn {
+    font-size: 13px;
+  }
+}
+
+.filter_nav_item .filter_btn::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.filter_nav_item .filter_btn:hover:before {
+  width: 100%;
+}
+
+.filter_nav_item .filter_btn:hover span {
+  color: white!important;
+}
+
+.filter_nav_item .filter_btn span {
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 0;
+}
+
+.button.is-checked .filter_btn span,
+.button.is-selected .filter_btn span {
+  color: white;
+}
+
+.button.is-checked .filter_btn::before,
+.button.is-selected .filter_btn::before {
+  width: 100%;
+}
+
 .work__row {
   display: block;
   position: relative;
   width: 100%;
   margin-top: 5px;
-  padding-left: 5px;
 }
 
 .work__row:after {
@@ -1531,21 +1624,14 @@ a:hover .instagram_logo {
 }
 
 .work__cell {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  width: 20%;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  float: left;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
+  margin-bottom: 5px;
 }
 
 .work__cell__container {
   display: block;
   position: relative;
   overflow: hidden;
+  margin-right: 5px;
   cursor: pointer;
 }
 

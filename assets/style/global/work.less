@@ -1,3 +1,7 @@
+.grid_wrapper {
+	padding-left: 5px;
+}
+
 .work_wrap {
 	position: relative;
 	display: block;
@@ -8,13 +12,141 @@
 	background: white;
 }
 
+
+
+
+
+
+/* Filter nav
+------------------------- */
+
+
+
+/* reset button style */
+
+button {
+  margin: 0px;
+  padding: 0px;
+
+  background-color: transparent;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+.filter_nav {
+	position: relative;
+	width: 100%;
+	padding: 20px 0px;
+
+	text-align: center;
+
+
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+
+	/*opacity: 0;*/
+}
+
+.filter_nav_item {
+	display: inline-block;
+	padding: 0 0 0 5px;
+
+	border-left: 1px solid rgba(0,0,0,0.8);
+	border-right: none;
+	box-sizing: border-box;
+
+	&:first-child {
+		border: none;
+	}
+
+	
+	.filter_btn {
+		position: relative;
+		display: block;
+		padding: 3px 10px;
+
+		color: black;
+		font-size: 15px;
+		font-family: "Pro-Light";
+		text-transform: uppercase;
+		text-decoration: none;
+
+		cursor: pointer;
+
+		@media only screen and (max-width: 450px) {
+			font-size: 13px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 0px;
+			height: 100%;
+			left: 0;
+			top: 0;
+			
+			background: #000;
+
+			-webkit-transition: all .2s;
+			transition: all .2s;
+			
+		}
+
+		&:hover:before {
+			width: 100%;
+		}
+
+		&:hover span {
+			color: white!important;
+		}
+
+		span {
+			position: relative;
+			
+			color: #000;
+			font-weight: bold;
+
+			-webkit-transition: all .2s;
+			transition: all .2s;
+			
+			z-index: 0;
+		}
+	}
+}
+
+
+/* selected button state */
+
+.button.is-checked,
+.button.is-selected{
+	.filter_btn span {
+		color: white;
+	}
+	.filter_btn::before {
+		width: 100%;
+	}
+	
+}
+
+
+
+
+
 .work__row {
 	display: block;
 	position: relative;
 	width: 100%;
 	margin-top: 5px; 
-	padding-left: 5px;
-	/*padding-right: 40px;*/
+	/*padding-left: 5px;
+	padding-right: 40px;*/
 
 	&:after {
 		content: '';
@@ -22,6 +154,13 @@
 		clear: both;
 	}
 }
+
+
+/*  Old work cell
+
+
+
+
 
 .work__cell {
 	display: block;
@@ -38,11 +177,18 @@
 	-moz-transition: 0.3s ease;
 	-o-transition: 0.3s ease;
 	-ms-transition: 0.3s ease;
+}*/
+
+.work__cell {
+
+	margin-bottom: 5px;
 
 	&__container {
 		display: block;
 		position: relative;
 		overflow: hidden;
+
+		margin-right: 5px;
 
 		cursor: pointer;
 
