@@ -49,13 +49,23 @@
 	overflow: hidden;
 }
 
+.work_brand_wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.content_left {
+	float: left;
+}
+
+.content_right {
+	float: right;
+}
 
 
 /*  text  */
 
 .work_brand_content {
-	float: left;
-
 	position: relative;
 	display: inline-block;
 	height: 100%;
@@ -105,7 +115,22 @@
 
 
 
+/*  Image  */
 
+.brand_media_img {
+	position: relative;
+	display: block;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		width: 100%;
+	}
+
+	/*background-image: url("/assets/content/work_brand/hero_brand.jpg");
+	background-size: cover;
+	background-position: center;*/
+}
 
 
 
@@ -145,13 +170,7 @@
 
 
 
-@media only screen and (max-width: 1025px) {
-
-}
-
-@media only screen and (max-width: 765px) {
-
-
+@media only screen and (max-width: 1023px) {
 	.work_brand_content {
 		float: none;
 		display: block;
@@ -167,6 +186,12 @@
 
 		padding: 0 40px 40px 40px;
 	}
+}
+
+@media only screen and (max-width: 765px) {
+
+
+	
 }
 
 @media only screen and (max-width: 450px) {

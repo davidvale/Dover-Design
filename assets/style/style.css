@@ -274,6 +274,10 @@ body,
   width: 25%;
 }
 
+.wc3 {
+  width: 33.333%;
+}
+
 @media only screen and (max-width:1025px) {
   .c1,
   .c2,
@@ -297,6 +301,10 @@ body,
   .c2,
   .c3,
   .c4 {
+    width: 100%;
+  }
+
+  .wc3 {
     width: 100%;
   }
 }
@@ -2160,8 +2168,20 @@ button {
   overflow: hidden;
 }
 
-.work_brand_content {
+.work_brand_wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content_left {
   float: left;
+}
+
+.content_right {
+  float: right;
+}
+
+.work_brand_content {
   position: relative;
   display: inline-block;
   height: 100%;
@@ -2202,6 +2222,16 @@ button {
   height: 100%;
 }
 
+.brand_media_img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.brand_media_img img {
+  width: 100%;
+}
+
 .brand_grid_item {
   float: left;
   overflow: hidden;
@@ -2221,7 +2251,7 @@ button {
   background-position: center;
 }
 
-@media only screen and (max-width:765px) {
+@media only screen and (max-width:1023px) {
   .work_brand_content {
     float: none;
     display: block;
