@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
 				"tex",
-				"text-transform"
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"bac",
+				"background-size"
 			],
 			[
 				"text",
-				"text-decoration"
+				"text-align"
 			],
 			[
 				"padd",
@@ -48,10 +72,6 @@
 				"margin"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"co",
 				"content"
 			],
@@ -62,10 +82,6 @@
 			[
 				"let",
 				"left"
-			],
-			[
-				"max",
-				"max-height"
 			],
 			[
 				"marg",
@@ -82,10 +98,6 @@
 			[
 				"margin",
 				"margin-left"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"font",
@@ -106,10 +118,6 @@
 			[
 				"ma",
 				"margin"
-			],
-			[
-				"bac",
-				"background-position"
 			],
 			[
 				"in",
@@ -376,24 +384,26 @@
 	},
 	"file_history":
 	[
-		"/Users/davidvale/Desktop/style.css",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/header.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/footer.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/home.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/index.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/team.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work-brand.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-brand.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/global.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/team.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/global.js",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work-detail.html",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work-detail.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work-detail.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/team.html",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/work.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/about.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/_team.html",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/header.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/contact.html",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/contact.less",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/home.less",
+		"/Users/davidvale/Desktop/style.css",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/footer.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/team.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/js/global.js",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/about.less",
+		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/_team.html",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/about.html",
-		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/work.html",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/styleguide.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/global/typography.less",
 		"/Users/davidvale/1-Work/3_Clients/The_Botto_House/site/Dover-Design/assets/style/style.less",
@@ -491,7 +501,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			""
@@ -502,6 +512,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"c3",
+			"work",
+			".slide_title",
+			"slide",
+			"div",
+			"work__cell",
+			"filter_btn",
+			"a",
+			"<span>",
+			"255",
+			"4",
+			"grid_item",
+			"4",
+			";\n",
+			"info_subtitle",
 			"div",
 			"margin",
 			"find_more_btn",
@@ -614,22 +639,7 @@
 			"li",
 			".video",
 			".scale",
-			"ol",
-			"ul",
-			"ol",
-			"break",
-			"break-grid",
-			"out",
-			".out",
-			"h3",
-			".hr-line",
-			".video",
-			".full",
-			".fg",
-			"ellas-guide",
-			".ellas-guide",
-			".fg",
-			".bg"
+			"ol"
 		],
 		"highlight": true,
 		"in_selection": false,
