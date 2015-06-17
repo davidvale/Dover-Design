@@ -2184,17 +2184,18 @@ button {
 
 .work_brand_wrapper {
   display: table;
-  max-width: 1400px;
   margin: 0 auto;
   font-size: 0px;
 }
 
 .content_left {
   float: left;
+  border-right: 5px solid white;
 }
 
 .content_right {
   float: right;
+  border-left: 5px solid white;
 }
 
 .work_brand_content {
@@ -2315,6 +2316,11 @@ button {
     display: block;
     width: 100%;
     padding: 0px;
+  }
+
+  .content_left,
+  .content_right {
+    border: none;
   }
 }
 
