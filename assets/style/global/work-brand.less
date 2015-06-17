@@ -5,7 +5,7 @@
 	display: block;
 	overflow: hidden;
 	height: auto;
-	min-height: 300px;
+	/*min-height: 300px;*/
 	width: 100%;
 
 	padding: 5px 3px 0 3px;
@@ -134,14 +134,62 @@
 
 
 
+
+
+
+
+
+
 /*  Brand Grid images  */
 
-.brand_grid_item {
+.brand_grid {
 	float: left;
+	position: relative;
 	overflow: hidden;
-	height: 100%;
+
 	padding: 0px 3px 0 3px;
+
 	font-size: 0px;
+}
+
+
+.brand_grid_container {
+	position: relative;	
+	display: block;
+	overflow: hidden;
+
+	cursor: pointer;
+
+
+
+	&:before {
+		content: "";
+		position: relative;
+		display: block;
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	&:hover .brand_grid_background {
+		background-image: url("/assets/content/work/chez_cover.jpg")!important;
+	}
+}
+
+.brand_grid_background {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+
+  background-size: cover;
+  background-position: center;
+
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: 0.3s ease;
 }
 
 
@@ -479,5 +527,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-	
+	.brand_grid {
+		padding-bottom: 5px;
+	}
 }

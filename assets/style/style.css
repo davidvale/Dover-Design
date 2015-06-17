@@ -1348,15 +1348,16 @@ a:hover .instagram_logo {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.once_slide_title strong {
-  font-family: 'Pro-Bold',sans-serif;
-  text-transform: uppercase;
-}
-
 @media only screen and (max-width:450px) {
   .once_slide_title {
     font-size: 35px;
   }
+}
+
+.once_slide_title strong,
+.once_slide_title b {
+  font-family: 'Pro-Bold',sans-serif;
+  text-transform: uppercase;
 }
 
 .slide_title {
@@ -1720,6 +1721,7 @@ button {
 }
 
 .work__cell {
+  width: 20%;
   margin-bottom: 5px;
 }
 
@@ -2151,7 +2153,6 @@ button {
   display: block;
   overflow: hidden;
   height: auto;
-  min-height: 300px;
   width: 100%;
   padding: 5px 3px 0 3px;
 }
@@ -2245,12 +2246,48 @@ button {
   width: 100%;
 }
 
-.brand_grid_item {
+.brand_grid {
   float: left;
+  position: relative;
   overflow: hidden;
-  height: 100%;
   padding: 0px 3px 0 3px;
   font-size: 0px;
+}
+
+.brand_grid_container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.brand_grid_container:before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.brand_grid_container:hover .brand_grid_background {
+  background-image: url("/assets/content/work/chez_cover.jpg") !important;
+}
+
+.brand_grid_background {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .work_brand_full {
@@ -2519,6 +2556,12 @@ button {
     width: 97%;
     text-align: center;
     padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .brand_grid {
+    padding-bottom: 5px;
   }
 }
 
