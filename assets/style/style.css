@@ -2183,8 +2183,10 @@ button {
 }
 
 .work_brand_wrapper {
+  display: table;
   max-width: 1400px;
   margin: 0 auto;
+  font-size: 0px;
 }
 
 .content_left {
@@ -2197,7 +2199,7 @@ button {
 
 .work_brand_content {
   position: relative;
-  display: inline-block;
+  display: table;
   height: 100%;
   width: 50%;
   padding: 40px;
@@ -2208,7 +2210,7 @@ button {
   color: white;
   font-size: 18px;
   font-family: 'Pro-Light','sans-serif';
-  text-align: left;
+  text-align: center;
   line-height: 25px;
 }
 
@@ -2217,7 +2219,6 @@ button {
   display: inline-block;
   height: 100%;
   width: 50%;
-  padding: 40px;
 }
 
 .brand_media_wrapper {
@@ -2313,7 +2314,7 @@ button {
     float: none;
     display: block;
     width: 100%;
-    padding: 0 40px 40px 40px;
+    padding: 0px;
   }
 }
 
@@ -2323,7 +2324,7 @@ button {
   }
 
   .work_brand_media {
-    padding: 0 20px 20px 20px;
+    padding: 0px;
   }
 
   .brand_grid_item {
